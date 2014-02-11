@@ -1,0 +1,312 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red217\green11\blue0;\red164\green8\blue0;\red255\green39\blue18;
+\red134\green205\blue77;}
+\margl1440\margr1440\vieww14060\viewh11400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\b\fs28 \cf2 CONDITIONALS: 
+\b0\fs24 \cf0 \
+\
+Single = sign assigns the variable, double == sign confirms the variable. For example\
+\
+<?php\
+$pageTitle="contact";\
+if ($pageTitle =="contact") \{\
+	echo "You are on the contact page!";\
+\}\
+?>\
+\
+
+\b\fs28 \cf2 Forms\
+\
+
+\b0 \cf0 Basic Forms:\
+\
+
+\fs24 <form \cf2 (Form Tag*)\cf0  method="post" action="contact-process.php" action ="contact-process.php"\cf2 (This is where the form is being sent)\cf0 > \
+<table>\
+		<tr>\
+			<th>\
+				<label for= "name">Name</label> \cf2 for=id in order for the label to know where to line up\cf0 \
+			</th>\
+			<td>\
+				<input type="text" name= "name" id="name">\cf2  Great but only for single lines of text\cf0 \
+			</td>\
+		</tr>	\
+		<tr>\
+			<th>\
+				<label for= "email">Email</label>\cf2  This tag attaches to a form field\cf0 \
+			</th>\
+			<td>\
+				<input type="text" name= "email" id="email">\
+			</td>\
+		</tr>		\
+		<tr>\
+			<th>\
+				<label for= "message">Message</label>\
+			</th>\
+			<td>\
+				<textarea name= "message" id="message"></textarea> \cf2 good for large area of text\cf0 \
+			</td>\
+		</tr>				\
+	</table>\
+		<input type="submit" value="send">\
+	</form>\
+\
+
+\fs36 \cf2 \
+\
+Arrays\
+\
+
+\fs24 \cf0 Array:  a variable that contains that contains other variables\
+Array element: each variable within an array\
+each element has an index that can be used to identify it. start at zero work your way up.\
+\
+Format of an array:\
+\
+<?php\
+$variable = array("element0", "element1", "elementx")\
+?>\
+\
+To access each individual element by number:\
+\
+<?php\
+ echo $variable[x];\
+?>\
+\
+You can also use concoction to express multiple variables at once like so:\
+\
+<?php\
+echo $flavors [0] . $flavors [1];\
+?>\
+\
+You can also count the number of variables using the count function:\
+\
+<?php\
+echo count($variable);\
+?>\
+\
+Too list all the variables (elements) at once you use the foreach command:\
+\
+<?php\
+\
+foreach ($flavors as $flavor) \{\
+	echo $flavor;\
+\}\
+?>\
+\
+You can also add individual elements to an array.\
+\
+Lets say that you an array:\
+\
+<?php\
+$products = array('Logo Shirt, Red', \
+	'Mike the Frog Shirt, Black', \
+	'Mike the Frog shirt, Blue' \
+	);\
+\
+?>\
+\
+And you want to add another element. Ultimately, it will look like this:\
+\
+<?php\
+$products = array('Logo Shirt, Red', \
+	'Mike the Frog Shirt, Black', \
+	'Mike the Frog shirt, Blue' \
+	);\
+\
+?>\
+\
+<?php \
+$products[] = 'Logo Shirt, Green'; \
+?>\
+\
+If you want (recommended) you can also list all of the flavors with an empty array:\
+\
+<?php\
+$products = array() ;\
+$products[] = 'Logo Shirt, Red';\
+$products[] = 'Mike the Frog Shirt, Black'; \
+$products[]	= 'Mike the Frog shirt, Blue'; \
+$products[] = 'Logo Shirt, Green'; \
+?>\
+\
+This will allow you to give each element an ID which you can reference later. See example below:\
+\
+<?php\
+$products = array() ;\
+$products[101] = 'Logo Shirt, Red';\
+$products[102] = 'Mike the Frog Shirt, Black'; \
+$products[103]	= 'Mike the Frog shirt, Blue'; \
+$products[104] = 'Logo Shirt, Green'; \
+?>\
+\
+You can also assign elements non-numerical values. These are known as associative arrays.\
+\
+Example of an associative array:\
+\
+<?php $surfspots = array(); \
+$surfspots["spotname"] = "Blacks Beach";\
+$surfspots["bottom"] = "Sand/Deepwater Trench";\
+$surfspots["Difficulty"] = 8;\
+$surfspots["Crowd"] = "Aggresive, packed";\
+?>\
+\
+\
+<h1>Surf Spot Charactization</h1>\
+\
+\
+<ul>\
+\
+	<li>Spot Name: <?php echo $surfspots["spotname"] ;?></li>\
+	<li>Bottom Type: <?php echo $surfspots["bottom"] = "Sand/Deepwater Trench";?></li>\
+	<li>Difficulty Level: <?php echo $surfspots["Difficulty"] = 8; ?></li>\
+	<li>Crowd-Factor: <?php echo $surfspots["Crowd"] = "Aggresive, packed";?></li>\
+\
+</ul>\
+\
+Another example of the same thing is:\
+\
+<?php\
+$surfspots = array(\
+"spotname" => "Blacks Beach",\
+"bottom" => "Sand/Deepwater Trench",\
+"Difficulty" => 8,\
+"Crowd" => "Aggresive, packed",\
+);\
+?>\
+\
+\
+<h1>Surf Spot Charactization</h1>\
+\
+\
+\
+<ul>\
+\
+	<li>Spot Name: <?php echo $surfspots["spotname"] ;?></li>\
+	<li>Bottom Type: <?php echo $surfspots["bottom"] = "Sand/Deepwater Trench";?></li>\
+	<li>Difficulty Level: <?php echo $surfspots["Difficulty"] = 8; ?></li>\
+	<li>Crowd-Factor: <?php echo $surfspots["Crowd"] = "Aggresive, packed";?></li>\
+\
+</ul>\
+\
+\
+Nesting Arrays within Arrays\
+\
+This is also known as a multi dimensional array. Basically you can make each element in an array an array. Like so:\
+\
+<?php\
+\
+$surfspots = array();\
+$surfspots[0] = array(\
+	"spotname" => "Blacks Beach",\
+	"bottom" => "Sand/Deepwater Trench",\
+	"difficulty" => 8,\
+	"crowd" => "Aggresive, packed",\
+);\
+\
+$surfspots[1] = array(\
+	"spotname" => "Rincon",\
+	"bottom" => "Sand/pebbled",\
+	"difficulty" => 5,\
+	"crowd" => "Varies, usually crowded",\
+);\
+\
+?>\
+<?php foreach ($surfspots as $surfspot) \{ ?>\
+<ul>\
+	<li>Spot Name: <?php echo $surfspot["spotname"]; ?></li>\
+	<li>Bottom Type: <?php echo $surfspot["bottom"]; ?></li>\
+	<li>Difficulty Level: <?php echo $surfspot["difficulty"]; ?></li>\
+	<li>Crowd-Factor: <?php echo $surfspot["crowd"]; ?></li>\
+\
+</ul>\
+\
+<?php \} ?>\
+\
+You can thing of each array as a different level. See shirts.php for more notes but I like to think of it like so:\
+\
+$surfspots = array(); -Level 1\
+$surfspots[#] = array( -Level 2\
+""spotname" => "Blacks Beach", -level 3\
+\
+Each level is nested in the level above it. So Level 2 are elements in Level 1 and Level 3 are elements in level 2.\
+\
+You should also pay close attention to the foreach loop in shirts.php.\
+\
+Understanding whitespace.\
+\
+Apparently whitespace in between html tags and php changes the form of the page. So for our t-shirt store in order to get rid of white space we echo our html tags. \
+\
+This is cool because it allows us to never break the php tags.\
+\
+Check it out:\
+\
+<?php \
+$titlepage = "Mikes Full Catalog of Shirts";\
+$section = "shirts";\
+include ('inc/header.php'); \
+?>\
+	\
+	<div class="section shirts page">\
+\
+		<div class="wrapper">\
+\
+			<h1>Mike's Full Catalog of shirts</h1>\
+			<ul class="products">\
+				\cf3 <!--pay close attention to the foreach loop below, its basically the basis for an array. EDIT: Changed it to include html-->\
+\cf0 				<?php foreach ($products as $product) \{\
+						echo '<li>';\
+						echo '<a href = "#">';\
+						echo '<img src="' . $product['img'] . '" alt="' . $product['name'] . '">';\
+						echo '<p>View Details</p>';\
+						echo '</a>';\
+						echo '</li>';\
+				\} ?>\
+			</ul>	\
+		</div>\
+	</div>\
+\
+<?php include ('inc/footer.php'); ?>\
+\
+\
+\
+How to integrate with Paypal\
+\
+\
+First I created a paypal account.\
+\
+Then you want to create a button. For the shirts 4 Mike site you want a shopping cart button. Then paypal asks for a product id. THIS IS THE SAME AS THE ID YOU USED IN PHP.\
+\
+You create the button.\
+\
+See the creating Paypal Buttons video.\
+\
+Basic jist of things is that paypal creates code for you site so you can create a button and then add it to the site. Now the cool thing is that you can change the values in your website and they will be reflected in the shopping cart. So if you want to change the name of the shirt or the sizes you can do so. Its pretty cool\'85BUT..anybody with a chrome developer tool and can also create fraudulent shirts for their own cart. The only thing they can't change is the price (thankfully).\
+\
+Most important step is that we update our products array with the paypal id:\
+\
+I have highlighted the number in the code below:\
+\
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">\
+<input type="hidden" name="cmd" value="_s-xclick">\
+<input type="hidden" name="hosted_button_id" value=\cf4 \cb5 "W43ETYM5ZJ8JA"\cf0 \cb1 >\
+<table>\
+\
+Each item is going to have its own id, its important that we add that id to the products array.\
+\
+\cf4 **The quiz was difficult here, if you are having issues later, you should probably take a look at it again.**\
+\
+\cf0 Including the Products Array:\
+\
+Things get a little trickier here, but basic idea is that we are going to have a t-shirt page for each individual shirt. Each of those pages are going to be pulling from the same list of product array. So the solution is use include to pull the data from another page. \
+\
+I create products.php, which is just basically our product list. I then deleted it out of shirts.php and put in an include command to pull the array to shirts.php.\
+\
+The next thing we want to do is modify our foreach loop\
+\
+\
+\
+}
