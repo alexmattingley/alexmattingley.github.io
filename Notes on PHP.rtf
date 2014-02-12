@@ -303,9 +303,30 @@ Each item is going to have its own id, its important that we add that id to the 
 \
 Things get a little trickier here, but basic idea is that we are going to have a t-shirt page for each individual shirt. Each of those pages are going to be pulling from the same list of product array. So the solution is use include to pull the data from another page. \
 \
-I create products.php, which is just basically our product list. I then deleted it out of shirts.php and put in an include command to pull the array to shirts.php.\
+I create products.php, which is just basically our product list. I then deleted our products arrayout of shirts.php and put in an include command to pull the array to shirts.php.\
 \
-The next thing we want to do is modify our foreach loop\
+The next thing we want to do is modify our foreach loop to include the product key. There is another way that the foreach loop can be written so that it also loads the product key into the working variable:\
+\
+foreach ($variables as $key[this is the product #]=> $variable)\
+\
+An example of this in our document:\
+\
+foreach ($products as $product_id => $product) \
+\
+We also made it possible for each individual shirt to be a link to its own individual page with its own unique identity using that product id.\
+\
+echo '<a href="shirt.php?' . $product_id . '">'; \
+\
+The thing to keep in mind about the above statement is that the periods separate each individual elements that need to be echoed. this is concatenation. General structure:\
+\
+echo 'x' . $variable . 'y';\
+\
+The thing that is weird about echoing links is that the link equation requires quotation marks like so:\
+\
+<a href="shirts.php">\
+\
+So that means you have to be aware of two sets of markings: the ' and the "\
+\
 \
 \
 \
