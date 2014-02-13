@@ -315,7 +315,7 @@ foreach ($products as $product_id => $product) \
 \
 We also made it possible for each individual shirt to be a link to its own individual page with its own unique identity using that product id.\
 \
-echo '<a href="shirt.php?' . $product_id . '">'; \
+echo '<a href="shirt.php?id=' . $product_id . '">';\
 \
 The thing to keep in mind about the above statement is that the periods separate each individual elements that need to be echoed. this is concatenation. General structure:\
 \
@@ -325,7 +325,9 @@ The thing that is weird about echoing links is that the link equation requires q
 \
 <a href="shirts.php">\
 \
-So that means you have to be aware of two sets of markings: the ' and the "\
+So that means you have to be aware of two sets of markings: the ' and the ".\
+\
+I don't think there is a whole lot else that needs to be said here, but the video lesson has a lot of detail so if you are confused at this step, take a look at "building the shirts detail page" lesson again.\
 \
 \
 \
