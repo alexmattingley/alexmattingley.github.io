@@ -330,6 +330,45 @@ So that means you have to be aware of two sets of markings: the ' and the ".\
 I don't think there is a whole lot else that needs to be said here, but the video lesson has a lot of detail so if you are confused at this step, take a look at "building the shirts detail page" lesson again.\
 \
 \
+Adding Available Sizes:\
+\
+We are adding a third dimension array to our products pages.\
+\
+$products = array();\
+$products[101] = array(\
+    "name" => "Logo Shirt, Red",\
+    "img" => "img/shirts/shirt-101.jpg",\
+    "price" => 18,\
+    "paypal" => "W43ETYM5ZJ8JA",\
+    "sizes" => array('Small','Medium','Large')   -Sizes is another array.\
+\
+If we want to display those shirt sizes we have to go into the paypal form that we created earlier and change the option value to a php value/ chunk of code. \
+\
+Like so:\
+\
+<td><select name="os0" id="os0">\
+	<?php foreach ($product["sizes"] as $size) \{ ?>\
+		<option value="<?php echo $size; ?>"><?php echo $size; ?></option>\
+	<?php \} ?>\
+</select></td>\
+\
+More stuff on Arrays:\
+\
+Basic structure of an array and a foreach loop:\
+\
+<?php\
+$array_name = array("key"=>"value", "key"=>"value","key"=>"value" \'85)\
+\
+foreach($array_name as $key=>$value) \{\
+	echo (you can echo, $key, $values, etc) ;\
+\}\
+?>\
+\
+\
+A couple of things to keep in mind. \
+\
+1. Even if you do not express a key, the server will automatically assign it a # based on order in relation to other values. \
+2. \
 \
 \
 }

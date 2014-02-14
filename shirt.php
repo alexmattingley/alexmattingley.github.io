@@ -33,9 +33,9 @@ include("inc/header.php"); ?>
 							<label for="os0">Size</label>
 						</th>
 					<td><select name="os0" id="os0">
-						<option value="Small">Small $18.00 USD</option>
-						<option value="Medium">Medium $18.00 USD</option>
-						<option value="Large">Large $18.00 USD</option>
+						<?php foreach ($product["sizes"] as $size) { ?>
+						<option value="<?php echo $size; ?>"><?php echo $size; ?></option>
+						<?php } ?>
 					</select></td>
 					</tr>
 					</table>
