@@ -485,4 +485,50 @@ $palindromic_primes = array(11, 757, 16361);\
 $sum = mimic_array_sum($palindromic_primes);\
 echo "If we add all of the palindromic primes together we get: " . $sum;\
 \
-?>}
+?>\
+\
+Creating the Shirt Display Funciton\
+\
+On our website want to create a function that will load the HTML/ CSS into our main page and our shirts.php page.\
+\
+The function will look like so:\
+\
+function get_list_view_html($product_id, $product) \{\
+//HTML output\
+return $output;\
+\}\
+\
+We put the function into an include file specifically products.php.\
+\cf2 \
+Note: \cf0 It does not matter what variables you use in the above function. They simply function as a place holder and help you identify why you created the function.\
+\
+On Products.php:\
+\
+<?php\
+\
+function get_list_view_html($product_id, $product) \{\
+    \
+    $output = "";\
+    $output = $output . '<li>';\
+    $output = $output . '<a href="shirt.php?id=' . $product_id . '">';\
+    $output = $output . '<img src="' . $product['img'] . '" alt="' . $product['name'] . '">';\
+    $output = $output . '<p>View Details</p>';\
+    $output = $output .  '</a>';\
+    $output = $output .  '</li>';\
+\
+    return $output;\
+\}\
+\
+\
+A couple of things to note here. Again I will reiterate, the variables in this function can be named anything. They are only relevant to their particular equation.\
+\
+$output is also a place holder of sorts. It holds the values as you add onto it and it also functions as the variable that is returned to the document.\
+\
+On Index.php and shirts.php:\
+\
+<?php foreach ($products as $product_id => $product) \{\
+	echo get_list_view_html($product_id,$product);\
+	\} \
+?>		\
+\
+This is calling the function from products.php.}

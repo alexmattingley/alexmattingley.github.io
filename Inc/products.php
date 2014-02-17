@@ -1,4 +1,19 @@
 <?php
+
+function get_list_view_html($product_id, $product) {
+    
+    $output = "";
+    $output = $output . '<li>';
+    $output = $output . '<a href="shirt.php?id=' . $product_id . '">';
+    $output = $output . '<img src="' . $product['img'] . '" alt="' . $product['name'] . '">';
+    $output = $output . '<p>View Details</p>';
+    $output = $output .  '</a>';
+    $output = $output .  '</li>';
+
+    return $output;
+}
+
+
 //this an multidemensional array, or an array within an array. So the first array or base
 //if you will is the $products = array(); then you have the second level which could be 
 //thought of as an element or a second level array is $products[#] = array();. 

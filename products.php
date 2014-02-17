@@ -1,4 +1,21 @@
-<?php echo "hello stranger"; ?>
+<?php
+
+function get_list_view_html($prduct_id, $product) {
+
+    $output = "";
+//This is the HTML that is going to be outputed. So first you create a blank variable and then
+//add on value to that variable.
+    $output = $output . "<li>";
+    $output = $output . '<a href="shirt.php?id=' . $product_id . '">';
+    $output = $output . '<img src="' . $product['img'] . '" alt="' . $product['name'] . '">';
+    $output = $output . '<p>View Details</p>';
+    $output = $output . '</a>';
+    $output = $output . '</li>';
+
+    return $output;
+}
+?>
+
 
 <?php
 //this an multidemensional array, or an array within an array. So the first array or base

@@ -14,18 +14,11 @@ include ('inc/header.php');
 			<ul class="products">
 				<!--pay close attention to the foreach loop below, its basically the basis for an array. EDIT: Changed it to include html-->
 				<?php foreach ($products as $product_id => $product) {
-						echo '<li>';
-						echo '<a href="shirt.php?id=' . $product_id . '">';
-						echo '<img src="' . $product['img'] . '" alt="' . $product['name'] . '">';
-						echo '<p>View Details</p>';
-						echo '</a>';
-						echo '</li>';
-				} ?>
+						echo get_list_view_html($product_id,$product);
+					} 
+				?>
 			</ul>	
 		</div>
 	</div>
 
 <?php include ('inc/footer.php'); ?>
-<?php foreach ($variable as $key => $value) {
-	# code...
-}

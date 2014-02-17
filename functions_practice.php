@@ -18,7 +18,7 @@ echo "There are " . $count . " ice cream flavors.";
 ?>
 <br>
 <?php
-
+//as long as you know the function name you can continue 
 $beers = array('IPA', 'Porter', 'Imperial Stout');
 $count = mimic_count($beers);
 echo "There are " . $count . " beer types.";
