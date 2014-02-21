@@ -1,5 +1,19 @@
 <!--this is a variable, $variable name (x)= value for that given page -->
 <?php
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["message"];
+$email_body = "";
+$email_body = $email_body . "Name: " . $name . "<br>";
+$email_body = $email_body . "Email: " .$email . "<br>";
+$email_body = $email_body . "Message: " . $message;
+
+//TODO: Send Email
+
+header("Location: contact-thanks.php");
+?>
+<?php
 $titlepage = "Contact Mike";
 $section = "contact"; 
 include ('inc/header.php');
@@ -17,7 +31,7 @@ include ('inc/header.php');
 	the information is "post" to the page. The submission form must be wrapped in the form attribute. 
 	Also for note the label needs to match the id attribute. The action tells the browser where to send the information, 
 	in this case it sends the info to contact-process.php -->
-	<form method="post" action="contact-process.php"> 
+	<form method="post" action="contact.php"> 
 
 	<table>
 		<tr>
