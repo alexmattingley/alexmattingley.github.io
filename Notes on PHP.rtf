@@ -666,6 +666,49 @@ Here is the conditional:\
 \pard\tx720\pardeftab720\sa240
 \cf0 Next we want to check to see if the status variable exists using the isset function:\
 \
+Validating Contact Form Data\
+We don't want people sending forms without any values attached to them so we need to set up conditions so we can echo out error messages.\
+\pard\tx720\pardeftab720
+\cf0 <?php\
+\
+if ($_SERVER["REQUEST_METHOD"] == "POST") \{\
+	$name = trim($_POST["name"]);\
+	$email = trim($_POST["email"]);\
+	$message = trim($_POST["message"]);\
+\
+if ($name == "" OR $email =="" OR $message =="") \{\
+	echo "You must specify a values.";\
+	exit;\
+\}\
+\
+?>\
+\
+A couple of different things in the above code you should be aware of:\
+\
+Trim: This makes sure people don't just submit spaces. It trims off spaces from the beginning and the ends of words. You can also put trip into each variable in the if statement if you like instead, but there is no reason for that.\
+\
+Two major security threats:\
+\
+1. Robots that post information on your site hoping to get content seen or posted.\
+2. Robots that can use your contact form to send out emails to hundreds if not thousands to different email addresses.\
+\
+You need to make sure to account for both of these types of robots:\
+\
+foreach ($_POST as $value) \{\
+	if( stripos($value, 'Content-Type') !== FALSE) \{\
+		echo "There was a problem with the information you entered, you maybe a robot.";\
+		exit;\
+	\}\
+\}\
+\
+This is for the second robot. I am not entirely sure why it works but it keeps those fuckers from hacking you.\
+\
+if ($_POST["address"] != "") \{\
+	echo "Your form has an error.";\
+	exit;\
+\
+This is for the first robot type of robot. You create a fake none visible field. Robots don't use a visible browser, they scrape the hmtl, so if they fill it out the form won't send. Its known as a honeypot. \
+\
 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
