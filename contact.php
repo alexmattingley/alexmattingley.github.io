@@ -1,6 +1,7 @@
 <!--this is a variable, $variable name (x)= value for that given page -->
 <?php
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
@@ -11,7 +12,9 @@ $email_body = $email_body . "Message: " . $message;
 
 //TODO: Send Email
 
-header("Location: contact-thanks.php");
+header("Location: contact.php");
+exit;
+}
 ?>
 <?php
 $titlepage = "Contact Mike";

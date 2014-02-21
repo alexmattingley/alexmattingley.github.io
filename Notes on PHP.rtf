@@ -620,8 +620,28 @@ You can also use multiple parameters as long as they are separated by commas.\
 \
 More information about Contact forms ( I skipped this before so I am going back and doing it again)\
 Checking the Request Method:\
+We can check the request method using the $_SERVER variable. Its an array with multiple elements. The element we want to check is request method. The top line of the below code is how the request method is checked. If the request_method == "POST" then execute code.\
+\pard\pardeftab720
+\cf0 <?php\
+\
+if ($_SERVER["REQUEST_METHOD"] == "POST") \{\
+$name = $_POST["name"];\
+$email = $_POST["email"];\
+$message = $_POST["message"];\
+$email_body = "";\
+$email_body = $email_body . "Name: " . $name . "<br>";\
+$email_body = $email_body . "Email: " .$email . "<br>";\
+$email_body = $email_body . "Message: " . $message;\
+\
+//TODO: Send Email\
+\
+header("Location: contact.php");\
+exit;\
+\}\
+?>\
 \pard\tx720\pardeftab720\sa240
 \cf0 \
+Working with Get Variables\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \f0 \cf0 	}
