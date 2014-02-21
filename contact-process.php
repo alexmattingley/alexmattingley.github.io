@@ -1,3 +1,4 @@
+<!--
 <?php
 
 $name = $_POST["name"];
@@ -12,3 +13,4 @@ $email_body = $email_body . "Message: " . $message . "<br>";
 
 header("Location: contact-thanks.php");
 ?>
+-->

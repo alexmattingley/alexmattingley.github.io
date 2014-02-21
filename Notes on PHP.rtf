@@ -642,6 +642,31 @@ exit;\
 \pard\tx720\pardeftab720\sa240
 \cf0 \
 Working with Get Variables\
+we need somehow to let the server know to display the "Thank you message" instead of the form. We can accomplish that by adding a string at the end of the web address. \
+After the filename, type a question mark and a variable with any name. Let's call it "status." It should look like so:\
+header("Location: contact.php?status=thanks");\
+We'll use an equal sign and then specify a value of thanks. Variables added to the web address in this manner getsent in the server along with the request for the web page. They are available in a special PHP variable called $_get.\
+This variable works just like the _post and _server variables we've already looked at. The element we want to check here is status. The same name we gave it in the web address. We can use this value in a conditional to check whether we should show the form or the thank you message.\
+Here is the conditional:\
+\
+\pard\tx720\pardeftab720
+\cf0 <?php if ($_GET["status"] == "thanks") \{ ?>\
+		\
+		<p style= "text-align:center;">Thanks! We will contact you shortly!</p>\
+\
+	<?php \} else \{ ?>\
+\
+		<p>I&rsquo;d love to hear from you! Complete the form to send me an email.</p>\
+	\
+		\cf2 	//\'85I cut out a bunch here for simplification purposes\'85.\
+\cf0 \
+		</form>\
+	<?php \} ?>\
+\
+\pard\tx720\pardeftab720\sa240
+\cf0 Next we want to check to see if the status variable exists using the isset function:\
+\
+\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \f0 \cf0 	}

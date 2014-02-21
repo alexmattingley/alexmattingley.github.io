@@ -1,3 +1,4 @@
+<!--
 <?php
 	$titlepage = "Thank you for Contacting Us!";
 	$section = "contact";
@@ -17,3 +18,4 @@
 <?php
 	include ("inc/footer.php");
 ?>
+-->
