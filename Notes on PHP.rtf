@@ -770,4 +770,55 @@ require_once('inc/phpmailer/class.phpmailer.php');\
 		echo "You must specify a valid email address.";\
 		exit;\
 	\}
-\f0 	}
+\f0 	\
+More notes for third party libraries:\
+\
+When someone refers to a library they are referring the files that are used in the PHPMailer. Third party library is just a stack of documents created by a third party, as in you do not create it yourself, you sort of burrow the code.\
+\
+ValidateAddress is the method.\
+\
+You can access the methods and properties of an object by first specifying the object name, and then by using these 2 characters--a hyphen and a greater-than sign--that together look like a single arrow.\
+\
+\
+How to use a third party library, step by step:\
+\
+Include the library using the require_once command/call.\
+\
+Create a variable and assign it a new object as the value. In our case it looks like this:\
+\
+$checker = new PalprimeChecker();\
+\
+Next you want to define a give property that is defined in the third party library. In other words we want assign the property a particular value. In this case:\
+\
+$checker->number = 17;\
+\
+You then are going to determine if a particular value is true or false. We are going to use a method to do this. Remember that a method is just a function that is defined in a particular object.\
+\
+echo "The number " . $checker->number;\
+if ($checker -> isPalprime())\{\
+echo "is";\
+\}\
+else \{\
+echo " is not";\
+\}\
+echo " a palprime.";\
+\
+\
+Final set of code:\
+\
+<?php\
+require_once('class.palprimechecker.php');\
+$checker = new PalprimeChecker();\
+$checker->number = 17;\
+\
+echo "The number " . $checker->number;\
+if ($checker -> isPalprime())\{\
+echo "is";\
+\}\
+else \{\
+echo " is not";\
+\}\
+echo " a palprime.";\
+\
+?>\
+}
