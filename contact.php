@@ -22,6 +22,19 @@ if ($_POST["address"] != "") {
 	exit;
 }
 
+//This is an example of an object. require_once, is just like include(more details in notes.)
+	require_once('inc/phpmailer/class.phpmailer.php');
+	$mail = new PHPMailer();
+	
+//the below code will check for a valid email address. If its not valid we want display 
+//the error message.
+	if (!$mail->ValidateAddress($email)){
+		echo "You must specify a valid email address.";
+		exit;
+	}
+
+
+
 	$email_body = "";
 	$email_body = $email_body . "Name: " . $name . "\n";
 	$email_body = $email_body . "Email: " .$email . "\n";

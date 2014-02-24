@@ -26,9 +26,8 @@ if ($pageTitle =="contact") \{\
 
 \b0 \cf0 Basic Forms:\
 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\fs24 \cf0 <form \cf2 (Form Tag*)\cf0  method="post" action="contact-process.php" action ="contact-process.php"\cf2 (This is where the form is being sent)\cf0 > \
+\fs24 <form \cf2 (Form Tag*)\cf0  method="post" action="contact-process.php" action ="contact-process.php"\cf2 (This is where the form is being sent)\cf0 > \
 <table>\
 		<tr>\
 			<th>\
@@ -563,6 +562,7 @@ For example: \
 \
 I did not totally understand why he chose to change the code here. the $ position, $total products stuff was so that we could have the option of displaying only four shirts on the home page.	\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \fs28 \cf2 More function practice with code academy:\
 \
@@ -710,6 +710,64 @@ if ($_POST["address"] != "") \{\
 This is for the first robot type of robot. You create a fake none visible field. Robots don't use a visible browser, they scrape the hmtl, so if they fill it out the form won't send. Its known as a honeypot. \
 \
 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\
+Using a Third Party Library.\
+\
+Video discusses the differences between and include, require, include once and require once function/variable.\
+\
+Commands that are similar to the include command:\
+\
+Include, require, include once, require once\
+\
+Difference between include command and require: If you include a file that does not exist, php will still try to execute the code best it can, while the require command will cause an error page to display. Certain files that contain functions should only be loaded once, a good example of this is the phpmailer file.\
+\
 
-\f0 \cf0 	}
+\fs28 \cf2 Object Variables\
+
+\fs24 \cf0 \
+Object- is a collection of functions and variables all rapped up together. \
+\
+Bicycle example: Bicycle is an object: Variables might include color, Frame type etc. These variables are called 
+\fs28 \cf2 properties. 
+\fs24 \cf0 The Bicycle might also have functions these might include brakes,  ability to change gears etc. These are called 
+\fs28 \cf2 methods. 
+\fs24 \cf0 So in an object:\
+\
+Variables = Properties\
+\
+Functions = Methods.\
+\
+PHPMailer uses an object to send the email.\
+\
+A couple of important symbols for objects:\
+\
+the -> is related to properties and methods in objects much in the same way that the => is related to elements in an array.\
+\
+Specifying a method:\
+\
+$variablename-> methodname(argumentlist);\
+\
+In our example our method is:\
+\
+$mail->ValidateAddress($email)\
+\
+We then put the code in an if statement with a negative value:\
+\
+if (!$mail->ValidateAddress($email))\{\
+		echo "You must specify a valid email address.";\
+		exit;\
+	\}\
+\
+At the end of the exercise we are left with:\
+\
+require_once('inc/phpmailer/class.phpmailer.php');\
+	$mail = new PHPMailer();\
+	\
+//the below code will check for a valid email address. If its not valid we want display \
+//the error message.\
+	\
+	if (!$mail->ValidateAddress($email))\{\
+		echo "You must specify a valid email address.";\
+		exit;\
+	\}
+\f0 	}
