@@ -1,8 +1,9 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
-}
+\f3\fnil\fcharset0 Monaco;}
 {\colortbl;\red255\green255\blue255;\red217\green11\blue0;\red164\green8\blue0;\red255\green39\blue18;
-\red134\green205\blue77;\red103\green103\blue103;\red77\green77\blue77;}
+\red134\green205\blue77;\red103\green103\blue103;\red77\green77\blue77;\red38\green38\blue38;\red0\green45\blue153;
+}
 {\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
 {\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
 \margl1440\margr1440\vieww14060\viewh11400\viewkind0
@@ -506,7 +507,6 @@ return $output;\
 \}\
 \
 We put the function into an include file specifically products.php.\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 \cf2 \
 Note: \cf0 It does not matter what variables you use in the above function. They simply function as a place holder and help you identify why you created the function.\
 \
@@ -721,8 +721,10 @@ Include, require, include once, require once\
 \
 Difference between include command and require: If you include a file that does not exist, php will still try to execute the code best it can, while the require command will cause an error page to display. Certain files that contain functions should only be loaded once, a good example of this is the phpmailer file.\
 \
+\pard\tx720\pardeftab720
 
 \fs28 \cf2 Object Variables\
+\pard\tx720\pardeftab720
 
 \fs24 \cf0 \
 Object- is a collection of functions and variables all rapped up together. \
@@ -788,7 +790,7 @@ Create a variable and assign it a new object as the value. In our case it looks 
 \
 $checker = new PalprimeChecker();\
 \
-Next you want to define a give property that is defined in the third party library. In other words we want assign the property a particular value. In this case:\
+Next you want to define a given property(a variable in the object) that is defined in the third party library. In other words we want assign the property a particular value. In this case:\
 \
 $checker->number = 17;\
 \
@@ -821,4 +823,249 @@ echo " is not";\
 echo " a palprime.";\
 \
 ?>\
+\
+\
+Skipped over to Code-Academy for more Objects stuff:\
+\
+\pard\pardeftab720\sl440
+
+\fs30 \cf8 PHP is an 
+\b object-oriented programming language
+\b0 , which means that you can create objects, which can contain variables and functions.\
+\
+Why we use objects: we can bundle our functions and data in one place, we can create objects easily using 
+\i classes
+\i0  (object constructors), so we can create lots of 
+\i instances
+\i0  (objects, which have been constructed via a class), which contain mostly the same data, except some little nuances.\
+\
+
+\fs28 On the right, there is a 
+\i Person 
+\i0\b class
+\b0  and one 
+\b instance
+\b0  stored in 
+\f3 \cb0 $me
+\f0 \cb1  on {\field{\*\fldinst{HYPERLINK "javascript:void(0)"}}{\fldrslt \cf0 line 32}}. Then the
+\f3 \cb0 greet()
+\f0 \cb1  
+\i method
+\i0  of the 
+\f3 \cb0 $me 
+\f0\i \cb1 object
+\i0  is called and the result is 
+\f3 \cb0 echo
+\f0 \cb1 d on {\field{\*\fldinst{HYPERLINK "javascript:void(0)"}}{\fldrslt \cf0 line 35}}.\
+\
+
+\fs30 <!DOCTYPE html>\
+<html>\
+    <head>\
+      <title> Introduction to Object-Oriented Programming </title>\
+      <link type='text/css' rel='stylesheet' href='style.css'/>\
+    </head>\
+	<body>\
+      <p>\
+      <?php\
+        // The code below creates the class\
+        class Person \{\
+            // Creating some properties (variables tied to an object). These variables are defined in the public \
+	   //function below.\
+            public $isAlive = true;\
+            public $firstname;\
+            public $lastname;\
+            public $age;\
+            \
+            // Assigning the values\
+            public function __construct($firstname, $lastname, $age) \{\
+              $this->firstname = $firstname;\
+              $this->lastname = $lastname;\
+              $this->age = $age;\
+            \}\
+            \
+            // Creating a method (function tied to an object)\
+            public function greet() \{\
+              return "Hello, my name is " . $this->firstname . " " . $this->lastname . ". Nice to meet you! :-)";\
+            \}\
+          \}\
+          \
+        // Creating a new person called "boring 12345", who is 12345 years old ;-). Take a look here, this\
+	//mimics the public function_construct above\
+        $me = new Person('boring', '12345', 12345);\
+        \
+        // Printing out, what the greet method returns\
+        echo $me->greet(); \
+        ?>\
+        </p>\
+    </body>\
+</html>\
+\
+\pard\pardeftab720\sl440\sa360
+\cf8 How object-oriented programming is used in real life can be shown with a forum as an example:\
+Every forum 
+\i user
+\i0  (object) has the same rights: he can 
+\i log in
+\i0  and 
+\i write
+\i0  (methods), can contain some 
+\i settings
+\i0  (properties), but every user has a different 
+\i name
+\i0 (another property).\
+Every user is created easily, as you create a new 
+\b instance
+\b0  of a
+\i User
+\i0  
+\b class
+\b0  when you sign up. And as we've seen, there are some properties and methods that every instance has in common (such as logging in and writing), and there are some which are unique (such as each user's name).\
+And without object-oriented programming\'97
+\b OOP
+\b0  for short\'97this could not be done that easily. ;-)\
+Another example: on the right, there is a 
+\f3\fs26 \cb0 Person
+\f0\fs30 \cb1  
+\i class
+\i0 , so every
+\f3\fs26 \cb0 new Person
+\f0\fs30 \cb1  has some properties, like 
+\f3\fs26 \cb0 $isAlive
+\f0\fs30 \cb1  or
+\f3\fs26 \cb0 $firstname
+\f0\fs30 \cb1 , and a method
+\f3\fs26 \cb0 greet()
+\f0\fs30 \cb1 .\
+Right now there is only one
+\i instance
+\i0  of the 
+\f3\fs26 \cb0 Person
+\f0\fs30 \cb1  
+\i class
+\i0 :
+\f3\fs26 \cb0 $me
+\f0\fs30 \cb1 . But we'll reconstruct this class and you'll even create another instance of the class, so your name will be 
+\f3\fs26 \cb0 echo
+\f0\fs30 \cb1 d, too.\
+\pard\pardeftab720\sl440
+
+\fs24 \cf0 \'85\'85\
+\
+Pieces of an object:\
+\
+Construct a class:\
+Basic syntax of a class-\
+class classname\{\
+\}\
+Class is created so it can be link properties to instances.\
+eg:\
+class Person \{\
+            \
+        \}\
+\
+Construct instances of this class:\
+Basic Structure:\
+$obj1 = new Classname();\
+These instances will eventually pull from the properties that are created in the class.\
+Eg:\
+$teacher = new Person();\
+$student = new Person();\
+\pard\tx720\pardeftab720
+\cf0 \
+These are both separate instances of the class "person".\
+\pard\pardeftab720\sl440
+\cf0 The new keyword means that you create a new object and ensures that your arguments are added as properties, so it initializes the constructor (which we are going to deal with later).\
+\
+Now we add properties to our class. Syntax looks like so:\
+class Classname \{\
+  public $propertyname = "Some value";\
+  public $otherProperty;\
+\}\
+\
+You do not have to assign it a value, you can do that later although you can if you want.\
+eg:\
+class Person \{\
+            public $isAlive = "true";\
+            public $firstname;\
+            public $lastname;\
+            public $age;\
+            \
+        \}\
+To access the property $propname of an existing $obj object, we have to use the following syntax:\
+$obj->propname;\
+eg:\
+ $teacher = new Person();\
+we have to create a constructor to create different objects. This constructor is also a method.\
+The syntax:\
+public function __construct($prop1, $prop2) \{\
+  $this->prop1 = $prop1;\
+  $this->prop2 = $prop2;\
+\
+You need to make sure that this is nested inside of the class. It should look like this:\
+\
+ \cf9 class Person \{		--->//Class\
+            public $isAlive = true;  \
+            public $firstname;\
+            public $lastname;\
+            public $age;\
+\cf0         public function __construct($firstname, $lastname, $age) \{ --->//Construct\
+          $this->firstname = $firstname;\
+          $this->lastname = $lastname;\
+          $this->age = $age;\
+            \}\
+        \}   \
+Some things to keep in mind:\
+-You're creating a function bound to a class (a method).\
+-The constructor method has to be called __construct().\
+- Finally, the weird way to assign the values: $this->prop1 = $prop1 means that the value you pass in the __construct() function via the new keyword is assigned to $this, which represents the object you are dealing with, and ->prop1 is the actual property of the object.\
+- By creating a new instance using the new keyword, you actually call this __construct() method, which constructs the object. And that's why we have to pass in some arguments when we create an instance of a class, since this is how the properties get set!\
+\
+How to create Methods:\
+Basic Syntax:\
+\
+public function funcname($optionalParameter) \{\
+  // Do something\
+\}\
+\
+eg:\
+public function greet() \{\
+        return "Hello, my name is " . $this->firstname . " " . $this->lastname . ". Nice to meet you!:-)";\
+         \}\
+\
+This also needs to be nested within the class.\
+\
+Final fully completed object:\
+      <?php\
+        class Person \{\
+            public $isAlive = true;\
+            public $firstname;\
+            public $lastname;\
+            public $age;\
+            \
+      \
+        public function __construct($firstname, $lastname, $age) \{\
+          $this->firstname = $firstname;\
+          $this->lastname = $lastname;\
+          $this->age = $age;\
+        \}\
+         public function greet() \{\
+        return "Hello, my name is " . $this->firstname . " " . $this->lastname . ". Nice to meet you!:-)";\
+         \}\
+    \}\
+        $teacher = new Person("boring","12345","12345");\
+        $student = new Person("Goggles","Von Squeeken","24");\
+   \
+    echo $teacher -> greet();\
+    echo $student -> greet();\
+        ?>\
+\
+\
+To review: Pieces of an object:\
+\
+1.Create the class. Remember this also includes the properties(variables that you will be using)\
+2.Create the function construct.\
+3. Create methods(more functions)\
+4.Create instances. Call class construct\
+5.echo out instances of methods.\
 }
