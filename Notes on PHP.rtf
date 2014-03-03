@@ -831,7 +831,7 @@ Skipped over to Code-Academy for more Objects stuff:\
 
 \fs30 \cf8 PHP is an 
 \b object-oriented programming language
-\b0 , which means that you can create objects, which can contain variables and functions.\
+\b0 , which means that you can create objects, which \cb1 can contain variables and functions.\
 \
 Why we use objects: we can bundle our functions and data in one place, we can create objects easily using 
 \i classes
@@ -846,18 +846,18 @@ Why we use objects: we can bundle our functions and data in one place, we can cr
 \b0  and one 
 \b instance
 \b0  stored in 
-\f3 \cb0 $me
-\f0 \cb1  on {\field{\*\fldinst{HYPERLINK "javascript:void(0)"}}{\fldrslt \cf0 line 32}}. Then the
-\f3 \cb0 greet()
-\f0 \cb1  
+\f3 $me
+\f0  on {\field{\*\fldinst{HYPERLINK "javascript:void(0)"}}{\fldrslt \cf0 line 32}}. Then the
+\f3 greet()
+\f0  
 \i method
 \i0  of the 
-\f3 \cb0 $me 
-\f0\i \cb1 object
+\f3 $me 
+\f0\i object
 \i0  is called and the result is 
-\f3 \cb0 echo
-\f0 \cb1 d on {\field{\*\fldinst{HYPERLINK "javascript:void(0)"}}{\fldrslt \cf0 line 35}}.\
-\
+\f3 echo
+\f0 d on {\field{\*\fldinst{HYPERLINK "javascript:void(0)"}}{\fldrslt \cf0 line 35}}.\
+\cb1 \
 
 \fs30 <!DOCTYPE html>\
 <html>\
@@ -921,33 +921,33 @@ Every user is created easily, as you create a new
 \i0  
 \b class
 \b0  when you sign up. And as we've seen, there are some properties and methods that every instance has in common (such as logging in and writing), and there are some which are unique (such as each user's name).\
-And without object-oriented programming\'97
+And with\cb1 out object-oriented programming\'97
 \b OOP
 \b0  for short\'97this could not be done that easily. ;-)\
 Another example: on the right, there is a 
-\f3\fs26 \cb0 Person
-\f0\fs30 \cb1  
+\f3\fs26 Person
+\f0\fs30  
 \i class
 \i0 , so every
-\f3\fs26 \cb0 new Person
-\f0\fs30 \cb1  has some properties, like 
-\f3\fs26 \cb0 $isAlive
-\f0\fs30 \cb1  or
-\f3\fs26 \cb0 $firstname
-\f0\fs30 \cb1 , and a method
-\f3\fs26 \cb0 greet()
-\f0\fs30 \cb1 .\
+\f3\fs26 new Person
+\f0\fs30  has some properties, like 
+\f3\fs26 $isAlive
+\f0\fs30  or
+\f3\fs26 $firstname
+\f0\fs30 , and a method
+\f3\fs26 greet()
+\f0\fs30 .\
 Right now there is only one
 \i instance
 \i0  of the 
-\f3\fs26 \cb0 Person
-\f0\fs30 \cb1  
+\f3\fs26 Person
+\f0\fs30  
 \i class
 \i0 :
-\f3\fs26 \cb0 $me
-\f0\fs30 \cb1 . But we'll reconstruct this class and you'll even create another instance of the class, so your name will be 
-\f3\fs26 \cb0 echo
-\f0\fs30 \cb1 d, too.\
+\f3\fs26 $me
+\f0\fs30 . But we'll reconstruct this class and you'll even create another instance of the class, so your name will be 
+\f3\fs26 echo
+\f0\fs30 d, too.\cb1 \
 \pard\pardeftab720\sl440
 
 \fs24 \cf0 \'85\'85\
@@ -1068,4 +1068,118 @@ To review: Pieces of an object:\
 3. Create methods(more functions)\
 4.Create instances. Call class construct\
 5.echo out instances of methods.\
+\
+More on Objects:\
+\
+Check out the example in the below. We're demoing three useful built-in methods: is_a(), which we use to find out if a particular object is an instance of a given class; property_exists(), to see if an object has a given property; and method_exists(), to see if an object has a given method.\
+\
+Note that the first argument is the object we're checking, and the second is the class, property, or method name as a "string".\
+\
+<html>\
+  <head>\
+    <title>Class and Object Methods</title>\
+  </head>\
+  <body>\
+    <p>\
+      <?php\
+        class Person \{\
+          public $isAlive = true;\
+          \
+          function __construct($name) \{\
+              $this->name = $name;\
+          \}\
+          \
+         public function dance() \{\
+            return "I'm dancing!";\
+          \}\
+        \}\
+        \
+        $me = new Person("Shane");\
+        if (is_a($me, "Person")) \{\
+          echo "I'm a person, ";\
+        \}\
+        if (property_exists($me, "name")) \{\
+          echo "I have a name, ";\
+        \}\
+        if (method_exists($me, "dance")) \{\
+          echo "and I know how to dance!";\
+        \}\
+      ?>\
+    </p>\
+  </body>\
+</html>\
+Inheritance:\
+ Inheritance is a way for one class to take on the properties or methods of another, and is used to express an "is-a" relationship\'97for example, a Truck "is-a" Vehicle, so it could inherit from Vehicle, but a Motorcycle isn't a Truck, so it shouldn't inherit from Truck (though both could inherit from Vehicle).\
+\
+We can cause one PHP class to inherit from another with the extends keyword.\
+\
+<?php\
+        class Shape \{\
+          public $hasSides = true;\
+        \}\
+        \
+        class Square extends Shape \{\
+        \
+        \}\
+        \
+        $square = new Square();\
+        // Add your code below!\
+        if (property_exists($square, "hasSides")) \{\
+          echo "I have sides!";\
+        \}\
+      ?>\
+\
+Occasionally we want to set variables that don't change, however, and these are prefixed with the const keyword (short for constant).\
+\
+PHP lets us set constants on a class-by-class basis! The good news is that this means we can have many constants with the same name, so long as they're all in different classes. The bad news is that means we need to have some way of specifying which class we mean.\
+\
+Each class has its own scope, which is the context in which its variables can be used. In PHP, we can use ::, \cf2 the scope resolution operator\cf0 , to specify which constant we want, like so:\
+\
+ <?php\
+      class Person \{\
+          \
+      \}\
+      class Ninja extends Person \{\
+         const stealth = "MAXIMUM";\
+        \
+      \}\
+      if (Ninja::stealth) \{\
+        echo Ninja::stealth;\
+      \}\
+      \
+      \
+      ?>\
+\
+\pard\pardeftab720\sl440
+
+\fs28 \cf2 NOTE:
+\fs24 \cf0  The Scope Resolution operator is a very important shortcut. You can also use it to select methods and properties within a class IF  you use the static keyword.\
+\
+\pard\pardeftab720\sl440\sa360
+
+\fs30 \cf8 The 
+\f3\fs26 \cb1 static
+\f0\fs30  \cb1 keyword lets you use a class' property or method without having to create an instance of that class. It works like this:\
+\pard\pardeftab720\sl440
+
+\fs24 \cf8 <?php\
+        class King \{\
+          // Modify the code on line 10...\
+          public static function proclaim() \{\
+            echo "A kingly proclamation!";\
+          \}\
+        \}\
+        // ...and call the method below!\
+       echo King::proclaim();\
+        \
+      ?>\cf0 \
+\
+\pard\pardeftab720\sl440
+
+\fs28 \cf3 Shirts 4 Mike, Deploying the Site:
+\fs24 \cf0 \
+\
+I pretty much stopped here. If I am ever getting ready to launch a site, I will go over this section again.\
+\
+\
 }

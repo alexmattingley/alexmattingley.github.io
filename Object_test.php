@@ -14,7 +14,7 @@
 5.echo out instances of methods.
 -->
     <p>One can find a wide variety of beer in San Diego. This is a list of some of my favorites:</p>
-    <p>
+<p>
       
     <?php
         class beer {
@@ -41,7 +41,7 @@
         <br>
         <?php
         echo $beer2->display_beer();
-        ?>
+    ?>
       </p>
     </body>
-</html>
+    </html>
