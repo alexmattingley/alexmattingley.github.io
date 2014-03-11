@@ -1,19 +1,9 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Lulight | Love and Light</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link href='http://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,700,700italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-	<header>
-		<?php
-		include('inc/header.php');
-		?>
-	</header>
+<?php
+$titlepage = "Lulight | Love and Light";
+$section = "Portfolio";
+?>
+<?php include('inc/header.php'); ?>
+	
 	<div id="wrapper">
 		<section>
 			<ul id="gallery">
@@ -31,7 +21,7 @@
 				</li>
 				<li>
 					<a href="img/numbers-06.jpg">
-						<img id="clear" src="img/numbers-06.jpg" alt="">
+						<img src="img/numbers-06.jpg" alt="">
 						<p>Weddings</p>
 					</a>
 				</li>
@@ -49,13 +39,6 @@
 				</li>
 			</ul>
 			
-		</section>
-		<footer>
-			<?php 
-			include('inc/footer.php');
-			?>
-		</footer>
-	</div>	
 
-</body>
-</html>
+		<?php include('inc/footer.php'); ?>
+

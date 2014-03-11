@@ -29,6 +29,10 @@ Header
 header {
 	background-color: #6ab47b;
 	border-color: #599a68;
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	width: 100%;
 }
 /*logo text */
 header h1,h2 {
@@ -55,7 +59,19 @@ nav {
 	padding: 10px 0;
 	margin: 20px 0 0;
 }
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
 
+nav li {
+	display: inline-block;
+}
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
 /*************************
 Footer
 *************************/
@@ -65,6 +81,11 @@ footer {
 	clear: both;
 	padding-top: 50px;
 	color: #ccc;
+}
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
 }
 /*************************
 Page Portfolio

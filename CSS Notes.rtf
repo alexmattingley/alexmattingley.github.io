@@ -114,6 +114,12 @@ A couple of steps for custom fonts:\
 1. Stick href into index document below normalize.css but above main.css. That is because we will be referring to it in our main.css, but we need to make sure that we are able to override normalize.css.\
 2.Reference the fonts in CSS.\
 \
+You can refer to a specific type of a font (think bold, italics thin, etc) either using the keywords or using a number (which needs to reference google fonts). For example:\
+\
+nav a \{\
+	font-weight: 800;\
+\}\
+\
 
 \fs28 \cf2 ***Widths/styling:\
 
@@ -146,10 +152,27 @@ Float element:\
 \
 The float property allows the text to flow around an image.\
 \
+A note about floats: If you float and element, it no longer has an assumed width of 100%. You need to make sure that you specify if you want the element to span the width of the page.\
+\
 Clear Property: \
 \
 footer \{\
 	clear: both;\
 \}\
 \
-So I think this means that this will make it so there is no content on either side of the content in question.}
+So I think this means that this will make it so there is no content on either side of the content in question.\
+\
+Block level v inline elements:\
+\
+Block level elements will take up space on the page and push other elements out of the way.\
+\
+In-line elements: are most just text, they will appear in-line with the surrounding text.\
+\
+In-line Block: will allow block elements to be side by side like in-line elements even if they are not inline elements. This will allow these elements to retain block level features like width and height.\
+\
+\
+Creating High Res images:\
+\
+ You can put images on the site that are double the size/pxs and then you can resize them in the site.\
+\
+}
