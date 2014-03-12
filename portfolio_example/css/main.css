@@ -22,6 +22,9 @@ a {
 img {
 	max-width: 100%;
 }
+h3 {
+	margin: 0 0 1em 0;
+}
 /*************************
 Header
 *************************/
@@ -29,7 +32,7 @@ Header
 header {
 	background-color: #6ab47b;
 	border-color: #599a68;
-	float: left;
+	/*float: left;*/
 	margin: 0 0 30px 0;
 	padding: 5px 0 0 0;
 	width: 100%;
@@ -110,6 +113,18 @@ Page Portfolio
 	font-size: .75em;
 	color: #bdc3c7
 }
+/*************************
+Page About
+*************************/
+/*for whatever reason, firefox does not seem to like this, 
+but everything displays ok on chrome? Rich says code is wrong*/
+.profile-photo {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 30px;
+	border-radius: 100%;
+}
+
 /*************************
 Colors
 *************************/

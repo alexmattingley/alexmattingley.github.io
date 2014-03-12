@@ -1,6 +1,6 @@
 <?php
 $titlepage = "Lulight | Love and Light";
-$section = "Portfolio";
+$section = "portfolio";
 ?>
 <?php include('inc/header.php'); ?>
 	
