@@ -99,12 +99,45 @@ $property\
 \
 \}\
 \
+More selecting stuff:\
+\
+Lets say that you want to select a list item inside of an unordered list (class=contact-info) with the class "phone".\
+\
+This is what it will look like:\
+\
+\pard\pardeftab720\sl312\slmult1
+
+\fs28 \cf0 .contact-info li.phone \{\
+/*do something*/\
+\}
+\fs24 \
+\pard\pardeftab720
+\cf0 \
+Notice the spacing. li is the child of contact.info so there is a space. Conversely, the class "phone" is part of the li that you are trying to select.\
+\
 
 \f0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 \cf0 Taking a Mobile First Approach:\
 \
 build the mobile site first and then worry about the more complex shit.\
+\
+A couple of steps to making a responsive site:\
+\
+1. Create Fluid images. First you set the image width to 100% and then we set all images to percentages essentially creating a grid. Percentages will allow the image to change sizes with the relative width of the container. Pixels are fixed units and will not adjust based on the size of the browser.\
+2. Media Queries.\
+\
+Media Queries are refered to as a breakpoint. After determining breakpoints we add in mediaqueries.\
+\
+Media Queries:\
+\
+@media screen and (condition) \{\
+	body \{\
+	//do shit\
+	\}\
+\}\
+\
+Think of each of the above commands as a condition. If @media is not screen (for example, its print or something else) or condition is not met then the code will not be executed.\
 \
 \
 Fonts:\
@@ -172,7 +205,7 @@ In-line elements: are most just text, they will appear in-line with the surround
 \
 In-line Block: will allow block elements to be side by side like in-line elements even if they are not inline elements. This will allow these elements to retain block level features like width and height.\
 \
-Images are normally displayed inline like text. displaying them block will give us more flexibility in our build. See the class ".profile-photo" (some issues with the code here)\
+Images are normally displayed inline like text. displaying them block will give us more flexibility in our build. See the class ".profile-photo" \
 \
 \
 Creating High Res images:\
@@ -184,5 +217,13 @@ How to use inspector:\
 alt+command+i will open up inspector\
 \
 alt+command+c will allow you to edit in the inspector.\
+\
+Linking phone numbers and emails:\
+\
+<ul class="contact info">\
+	<li class="phone"><a href="tel:805 455 6260">805 455 6260</a></li>\
+	<li class="email"><a href="mailto:hellolulight@gmail.com">hellolulight@gmail.com</a></li>\
+</ul>\
+\
 \
 }
