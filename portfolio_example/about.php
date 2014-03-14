@@ -3,9 +3,13 @@ $titlepage = "Lulight | About";
 $section = "about";
 ?>
 <?php include('inc/header.php'); ?>
+<div id="wrapper">
+	<section>
 		<img src="img/nick.jpg" alt="Photograph of Nick Petite" class="profile-photo">
 		<h3>About</h3>
 			<p>Hi, I am Lu, Lucy, Luly. I am a born and raised uruguayan photographer and exhibiting artist. Now I live in San Diego, California, with…Alex.</p>
+	</section>
+</div>
 
 <?php include('inc/footer.php'); ?>
 

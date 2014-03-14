@@ -1,11 +1,19 @@
 @media screen and (min-width: 480px) {
-	body {
-		background: navy;
+
+/*************************
+Two Column layout
+*************************/
+	#primary {
+		width: 50%;
+		float: left;
 	}
+	#secondary{
+		width: 40%;
+		float: right;
+	}
+
 }
 
 @media screen and (min-width: 660px) {
-	body {
-		background: darkgreen;
-	}
+
 }

@@ -1,3 +1,4 @@
+	<div id="wrapper">
 			<footer>
 				<a href="https://twitter.com/_FloridaMan">
 					<img src="img/twitter-wrap.png" alt="Twitter" class="social-icon">
