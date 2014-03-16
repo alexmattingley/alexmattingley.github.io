@@ -25,6 +25,4 @@
 		</ul>
 	</nav>
 	</header>
-	<div id="wrapper">
-			<section>
-	<!--</section> close is in footer.php-->
+	

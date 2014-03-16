@@ -11,9 +11,55 @@ Two Column layout
 		width: 40%;
 		float: right;
 	}
+/*************************
+Portfolio Page
+*************************/
+	#gallery li {
+		width: 28.333333333%;
+	}
+	#gallery li:nth-child(4n) {
+		/*clear: both;*/
+		overflow: hidden;
+
+	}
+/*************************
+About
+*************************/
+
+	.profile-photo{
+		float: left;
+		margin: 0 5% 80px 0;
+	}
 
 }
 
 @media screen and (min-width: 660px) {
+
+/*************************
+Header
+*************************/
+	
+	nav {
+		background: none;
+		/*width: 45%;*/
+	}
+	#logo {
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		/*width: 45%;*/
+	}
+	h1 {
+		font-size: 2.5em;
+	}
+	h2 {
+		font-size: .825em;
+		margin-bottom: 20px;
+	}
+	header {
+		border-bottom: 5px solid #599a68;
+		margin-bottom: 60px;
+	}
+	
 
 }

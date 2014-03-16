@@ -16,19 +16,19 @@ $section = "portfolio";
 			<li>
 				<a href="img/numbers-02.jpg">
 					<img src="img/numbers-02.jpg" alt="">
-					<p>Fantasy and meditative Photography</p>
+					<p>Fantasy  and meditative Photography and meditative Photographyand meditative Photography</p>
 				</a>
 			</li>
 			<li>
 				<a href="img/numbers-06.jpg">
 					<img src="img/numbers-06.jpg" alt="">
-					<p>Weddings</p>
+					<p>afsd</p>
 				</a>
 			</li>
 			<li>
 				<a href="img/numbers-09.jpg">
 					<img src="img/numbers-09.jpg" alt="">
-					<p>Families</p>
+					<p>Fantasy and meditative Photography meditative Photography meditative Photography</p>
 				</a>
 			</li>
 			<li>
