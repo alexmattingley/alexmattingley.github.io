@@ -19,7 +19,6 @@ Portfolio Page
 	}
 	#gallery li:nth-child(4n) {
 		/*clear: both;*/
-		overflow: hidden;
 
 	}
 /*************************

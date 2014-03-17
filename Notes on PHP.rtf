@@ -28,8 +28,9 @@ if ($pageTitle =="contact") \{\
 
 \b0 \cf0 Basic Forms:\
 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
-\fs24 <form \cf2 (Form Tag*)\cf0  method="post" action="contact-process.php" action ="contact-process.php"\cf2 (This is where the form is being sent)\cf0 > \
+\fs24 \cf0 <form \cf2 (Form Tag*)\cf0  method="post" action="contact-process.php" action ="contact-process.php"\cf2 (This is where the form is being sent)\cf0 > \
 <table>\
 		<tr>\
 			<th>\
@@ -1182,6 +1183,44 @@ Each class has its own scope, which is the context in which its variables can be
 \fs24 \cf0 \
 \
 I pretty much stopped here. If I am ever getting ready to launch a site, I will go over this section again.\
+\
+\
+More Objects:\
+\
+Object Oriented Overview:\
+\
+Three areas of focus:\
+1. Encapsulation: About organizing code into a format that is easily readable and extensible. Largely also about defining access to code.\
+2. Inheritance: Allows us to create hierarchy, a method of establishing relationships\
+3. Polymorphism: Allows us to present a type of contract or requirements of a class that can be shared.\
+\
+Classes: at the center of organizing our design. A class is a template for defining what is inside of an object. Classes will allow us to manage which items are visible to the outside.\
+\
+<?php\
+class Product \{\
+//class definitions go here!\
+\}\
+\
+$p = new Product();\
+?>\
+ \
+\
+Properties have the ability to be:\
+\
+1. Public: can be accessed from anywhere in the code\
+\
+2. Protected: Can be accessed only from within the class itself or within parent or inherited classes\
+\
+3. Private: Can only be accessed by the class that has defined them.\
+\
+Note: Properties are public by default.\
+\
+var $name = public $name\
+\
+Access class properties with this symbol: ->\
+\
+For eg:\
+\
 \
 \
 }
