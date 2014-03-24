@@ -1253,6 +1253,18 @@ Yourself\
 \
 Static Method and Properties\
 \
+Define a static property:\
+\
+Inside of a give class:\
+\
+public static $property_name = "string"\
+\
+Define static method:\
+\
+public function method_name()\{\
+		return self::$property_name; //You can also concatenate here if you want to add in a string.\
+	\}\
+\
 How to call a static method:\
 \
 self::method();\
@@ -1260,4 +1272,20 @@ self::method();\
 How to call a static property:\
 \
 self::property_name;\
-}
+\
+\
+In total its going to look a little bit like this:\
+\
+<?php\
+class Product \{\
+\
+	public static $manufacturer = "bart taylor";\
+	public function get_maker()\{\
+		return self::$manufacturer . "<br>";\
+	\}\
+\}\
+$shirt = new Product("Space Juice T-shirt", 20, "Awesome Grey T-shirt");\
+\
+echo $shirt->get_maker(); //One way to access the static method get_maker();\
+echo $shirt::$manufacturer;\
+?>}
