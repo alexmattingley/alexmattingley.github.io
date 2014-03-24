@@ -1,6 +1,8 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red164\green8\blue0;}
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset0 AndaleMono;
+}
+{\colortbl;\red255\green255\blue255;\red164\green8\blue0;\red255\green39\blue18;\red24\green24\blue24;
+}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
@@ -115,8 +117,9 @@ This is what it will look like:\
 \cf0 \
 Notice the spacing. li is the child of contact.info so there is a space. Conversely, the class "phone" is part of the li that you are trying to select.\
 \
+\pard\pardeftab720
 
-\f0 \
+\f0 \cf0 \
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 \cf0 Taking a Mobile First Approach:\
 \
@@ -238,11 +241,13 @@ Testing the code:\
 \
 HTML Testing:\
 \
-{\field{\*\fldinst{HYPERLINK "http://validator.w3.org/"}}{\fldrslt http://validator.w3.org/}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://validator.w3.org/"}}{\fldrslt \cf0 http://validator.w3.org/}}\
 \
 CSS Testing:\
 \
-{\field{\*\fldinst{HYPERLINK "http://jigsaw.w3.org/css-validator/"}}{\fldrslt http://jigsaw.w3.org/css-validator/}}\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+{\field{\*\fldinst{HYPERLINK "http://jigsaw.w3.org/css-validator/"}}{\fldrslt \cf0 http://jigsaw.w3.org/css-validator/}}\
 \
 Check out what the website looks like:\
 \
@@ -256,4 +261,135 @@ command+option+i \
 \
 or to get straight to editing:\
 \
-command+option+c}
+command+option+c\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\fs28 \cf3 CSS Layouts\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\fs24 \cf0 Two different ways to reset browser settings:\
+\
+CSS Reset:\
+\
+\pard\pardeftab720
+
+\f2\fs30 \cf4 /* http://meyerweb.com/eric/tools/css/reset/ \
+   v2.0 | 20110126\
+   License: none (public domain)\
+*/\
+\
+html, body, div, span, applet, object, iframe,\
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,\
+a, abbr, acronym, address, big, cite, code,\
+del, dfn, em, img, ins, kbd, q, s, samp,\
+small, strike, strong, sub, sup, tt, var,\
+b, u, i, center,\
+dl, dt, dd, ol, ul, li,\
+fieldset, form, label, legend,\
+table, caption, tbody, tfoot, thead, tr, th, td,\
+article, aside, canvas, details, embed, \
+figure, figcaption, footer, header, hgroup, \
+menu, nav, output, ruby, section, summary,\
+time, mark, audio, video \{\
+	margin: 0;\
+	padding: 0;\
+	border: 0;\
+	font-size: 100%;\
+	font: inherit;\
+	vertical-align: baseline;\
+\}\
+/* HTML5 display-role reset for older browsers */\
+article, aside, details, figcaption, figure, \
+footer, header, hgroup, menu, nav, section \{\
+	display: block;\
+\}\
+body \{\
+	line-height: 1;\
+\}\
+ol, ul \{\
+	list-style: none;\
+\}\
+blockquote, q \{\
+	quotes: none;\
+\}\
+blockquote:before, blockquote:after,\
+q:before, q:after \{\
+	content: '';\
+	content: none;\
+\}\
+table \{\
+	border-collapse: collapse;\
+	border-spacing: 0;\
+\}\
+\
+
+\f0\fs24 You copy and paste this set of code into the beginning of your CSS. This will remove, margins, padding, and default font sizes.\
+\
+Normalize.css is the other way to reset your CSS. I recommend using normalize.css.\
+\
+Inline v. Block Elements:\
+\
+See code for this exercise, I took my notes there.\
+\
+Table Display:\
+\
+
+\fs28 \cf2 I didn't take notes here. Rich is this important? Or is there a better way to vertically align elements?\
+\
+\
+
+\fs24 \cf4 Box Sizing: This is really really important. A bug in CSS. Padding and margins, will increase the width of a parent container. So that means that you need to universally select all elements in the document to contract this. This looks a little bit like this:\
+\
+* \{\
+	box-sizing: border-box;\
+\}\
+\
+Vertically align:\
+\
+vertical-align: top;\
+\
+A lot of times when you make something inline-block it aligns bottom. This is how fix that trend.\
+\
+How to create a sticky footer:\
+\
+Set all parent containers to \
+\
+height: 100%\
+\
+\
+Floats:\
+\
+Floats take elements out of the normal flow of the document, and will cause the proceeding elements to wrap around them.\
+\
+If we float both the main-nav and the main-logo we can see what happens when we take both elements out of the normal flow of the document.\
+\
+\cf2 ***
+\fs28 \cf2 Biggest problem is that floating an element can cause the parent element to collapse because it no longer honors the space around it. IF YOU DO NOT SET A MIN HEIGHT AND WIDTH, SHIT WILL GET WEIRD. but this can also lead to some problems.***\
+\
+\pard\pardeftab720
+
+\fs24 \cf0 Ultimately the best solution to this problem of collapse is to set a clear fix, which will force the parent element to clear its children.\
+\
+This is the clearfix hack: \
+\
+.group::after \{\
+  content: "";\
+  display: table;\
+  clear: both;\
+\}\
+\
+So in order to apply the clear fix you want to give the parent element that is collapsing the class of group. This is very very important.\
+\
+Another issue you start to run into is that the float starts to look weird in smaller browsers (i.e. phones, iPads)\
+\
+We want to make sure that we are able to make sure we set the initial value in the media query.
+\fs28 \cf2 \
+\
+\pard\pardeftab720
+
+\fs24 \cf4 \
+\
+}
