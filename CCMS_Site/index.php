@@ -10,9 +10,9 @@
 <body>
 	<div class="hero_bar primary_color_bg">
 		<header id="header" class="group">
-			<div class="main-logo">
-				<img src="img/ccms_logo.png">
-			</div>
+			<p class="main-logo">
+				<a href="#"></a>
+			</p>
 			<ul class="main-nav">
 				<li><a href="#">About</a></li>
 				<li><a href="#">Research Areas</a></li>
