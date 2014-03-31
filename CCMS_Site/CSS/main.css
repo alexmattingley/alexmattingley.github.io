@@ -1,0 +1,85 @@
+/****************************
+Site Wide Colors
+
+Background-grey: #f7f7f7;
+
+
+*****************************/
+/****************************
+Site Wide Styles/Defaults
+*****************************/
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+/****************************
+Colors/Backgrounds
+*****************************/
+.primary_color_bg {
+	background: url('../img/Primary_bg.png');
+}
+.main-nav a,
+.slide_text {
+	color: white;
+}
+.sub_logo {
+	background-color: #f7f7f7;
+}
+header {
+	background-color: black;
+}
+
+/****************************
+header layout
+*****************************/
+.main-logo {
+	float: left;
+}
+.main-nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.main-nav {
+	float: right;
+	margin-top: 20px;
+}
+header {
+	clear: both;
+}
+/****************************
+Media Queries
+*****************************/
+@media (min-width: 1px) and (max-width: 920px) {
+
+.main-nav li {
+	text-align: center;
+	display: block;
+}
+.main-nav {
+	float: left;
+	margin-top: 80px;
+	margin-left: 40%
+}
+header {
+	clear: both;
+}
+.main-logo {
+	margin-bottom: -80px;
+}
+.main-logo img {
+	width: 100%;
+}
+}
+/****************************
+Clearfix Hack
+*****************************/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

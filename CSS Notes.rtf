@@ -385,11 +385,102 @@ So in order to apply the clear fix you want to give the parent element that is c
 \
 Another issue you start to run into is that the float starts to look weird in smaller browsers (i.e. phones, iPads)\
 \
-We want to make sure that we are able to make sure we set the initial value in the media query.
+We want to make sure that we are able to make sure we set the initial value in the media query.\
+\
+Mobile First Layout:\
+\
+See CSS/HTML. They built this one for me and you have already done this so no repeat.
 \fs28 \cf2 \
+\
+Positioning Techniques \
+\
 \
 \pard\pardeftab720
 
-\fs24 \cf4 \
+\fs24 \cf4 Relative Positioning: If you position something as relative then it moves relative to its original position and does not effect the surrounding elements. The biggest issue you are going to run into is the element overflowing from its parent container. You want to make sure if that is happening you set the parent container to overflow: hidden;\
 \
+Absolute Positioning: Removes the element completely from the normal document flow and positions them relative to their containing div. If you give elements an offset of top: 0px; then they are going to line up with the top of the containing element. Biggest problem with absolute position is that it works kind of like the float, and can lead to container collapse, you need to make sure that you give the container a minimum height. CLEARFIX DOES NOT WORK HERE.\
+\
+Fixed Positioning: Best example of how to use fixed positioning is with a fixed header. Main issue with fixed header is that it will take on a lower z-index than absolutely positioned elements. This means that if you want a fixed header you have to make sure to fix the z-index. If you do not specify a z-index for other elements, anything higher than 1 will work.\
+\
+Absolute Centering: See webdocs for this one.\
+\
+\
+
+\fs28 \cf2 Flexbox\
+\pard\pardeftab720
+
+\fs24 \cf0 \
+Keep in mind that browser support is spotty for flex box. Namely IE-10 and Safari which have limited support. IE-10 actually has a completely different syntax so if you are going to use flex box then you have to be aware of that.\
+\pard\pardeftab720
+
+\fs28 \cf2 \
+\pard\pardeftab720
+
+\fs24 \cf0 First you need to establish a flex formatting context.\
+\
+We can layout the flex items in all sorts of ways. \
+\
+Flexbox Properties:\
+\
+align-self: center, right, etc;\
+\
+This will allow you to align elements in the center of a parent container.\
+\
+flex-grow: #;\
+\
+This will allow you to determine the size/ratio of elements to one another. if flex-grow: 1; then that means all of the elements in question are going to take up the exact amount of space.\
+\
+Animating Flexbox\
+\
+When paired with the transition property we can get elements to transit at a certain speed. They also did something fairly interesting with the icons. They actually pushed them outside of the parent div and then hid the overflow. Check out the \
+\
+.main logo a,\
+.main nav a \{\
+	overflow:hidden.\
+\} \
+\pard\pardeftab720
+\cf4 \
+Flexbox Columns:\
+\
+Create Flexbox formatting context by using display flex in the parent container. In this this case you want to target the class content row.\
+\
+.content-row \{\
+		display: flex;\
+	\}\
+\
+Then if you want to give the columns a specific width you want to use the flex property. In this case we want to originally give all of the columns an equal width, so we target each section;\
+\
+.content-row \{\
+		display: flex;\
+	\}\
+we can also change the order of the columns using the order property.\
+\
+.primary-content \{\
+		order: -1;\
+	\}\
+\
+Never did the Lesson on Modenizr.\
+\
+\
+\
+Grid Layouts:\
+\
+Grids allow us to build sites easier. They can be thought of in terms of Rows and Columns.\
+\
+First you want to figure out how many columns and Rows you want. Then you want to determine the total width of the webpage along with the total width of each column and gutter.\
+\
+In our case each column is 65px and each gutter is 20px. We have a total of twelve columns. That means each column in this case is 6.5% of the total width.\
+\
+The you want to determine the width of each combination of columns.\
+\
+For example, the width of one column is 6.5%\
+\
+The width of two columns is 15%\
+\
+and so on and so forth.\
+\
+Next up you want add in global styles for each grid. Check out the Sublime doc for details. Some complicated selectors being used but the idea is pretty simple to understand.\
+\
+Then you need to add the different classes to the HTML. Don't forget about the containers\
 }
