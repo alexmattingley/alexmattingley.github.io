@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- <link rel="stylesheet" href="css/grid.css"> -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -36,10 +37,12 @@
 				<ul class="arrows">
 					<li class="arrow-left">
 						<a href="#">
+							<i class="fa fa-arrow-left"></i>
 						</a>
 					</li>
 					<li class="arrow-right">
 						<a href="#">
+							<i class="fa fa-arrow-right"></i>
 						</a>
 					</li>
 				</ul>
