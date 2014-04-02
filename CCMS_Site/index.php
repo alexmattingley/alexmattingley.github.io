@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- <link rel="stylesheet" href="css/grid.css"> -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -32,13 +33,19 @@
 					<li><a href="#"></a><button id="button_white">Try a Demo</button></li>
 					<li><a href="#"></a><button id="button_clear">Learn More</button></li>
 				</ul>
-				<ul>
-					<li><a href="#"><img src="img/arrow-left.png"></a></li>
-					<li><a href="#"><img src="img/arrow-right.png"></a></li>
+				<ul class="arrows">
+					<li class="arrow-left">
+						<a href="#">
+						</a>
+					</li>
+					<li class="arrow-right">
+						<a href="#">
+						</a>
+					</li>
 				</ul>
 			</div>
 			<div class="slide_img">
-				<img src="http://lorempixel.com/700/500" />
+				<p></p>
 			</div>
 		</div>
 	</div>

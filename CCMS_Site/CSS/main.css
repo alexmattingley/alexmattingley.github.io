@@ -21,6 +21,21 @@ a {
   text-decoration: none;
   color: white;
 }
+.arrow-left {
+	background: url('../img/arrow-left.png');
+	height: 40px;
+	width: 40px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.arrow-right {
+	background: url('../img/arrow-right.png');
+	height: 40px;
+	width: 40px;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+ 
 /****************************
 Colors/Backgrounds
 *****************************/
@@ -33,9 +48,6 @@ Colors/Backgrounds
 }
 .sub_logo {
 	background-color: #f7f7f7;
-}
-header {
-	background-color: black;
 }
 
 /****************************
@@ -53,10 +65,18 @@ Smallest
 		margin-top: 0px;
 	}
 	.slide_text > * {
-		color: red;
 		text-align: center;
 		margin-right: 20px;
 		margin-left: 20px;
+	}
+	.arrow-right,
+	.arrow-left {
+		margin-top: 20px;
+	}
+	.slide-img p {
+		background-image: url('http://lorempixel.com/320/100');
+		height: 100px;
+		width: 100%;
 	}
 }
 /****************************
@@ -95,14 +115,7 @@ Large
 		margin-top: 0px; 
 		margin-right: -50px;
 	}
-
 }
-/****************************
-header layout
-*****************************/
-
-
-
 
 /****************************
 Clearfix Hack
