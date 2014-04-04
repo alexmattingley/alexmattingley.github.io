@@ -12,9 +12,7 @@
 <body>
 	<div class="hero_bar primary_color_bg">
 		<header id="header" class="group">
-			<p class="main-logo">
-				<a href="#"></a>
-			</p>
+			<a href="#" class="main-logo"></a>
 			<ul class="main-nav">
 				<li><a href="#">About</a></li>
 				<li><a href="#">Research Areas</a></li>
@@ -25,7 +23,7 @@
 				<li><a href="#">Sign In</a></li>
 			</ul>
 		</header>
-		<div class="hero_slider primary_color_bg">
+		<div class="hero_slider primary_color_bg group">
 			<div class="slide_text">
 				<h3>Featured Research Area</h3>
 				<h1>Molecular Spectral Networks</h1>
@@ -37,19 +35,19 @@
 				<ul class="arrows">
 					<li class="arrow-left">
 						<a href="#">
-							<i class="fa fa-arrow-left"></i>
+							<i class="fa fa-arrow-left fa-lg"></i>
 						</a>
 					</li>
 					<li class="arrow-right">
 						<a href="#">
-							<i class="fa fa-arrow-right"></i>
+							<i class="fa fa-arrow-right fa-lg"></i>
 						</a>
 					</li>
 				</ul>
 			</div>
-			<div class="slide_img">
-				<p></p>
-			</div>
+			<p class="slide_img">
+				<a href="#"></a>
+			</p>
 		</div>
 	</div>
 	<ul class="sub_logo">
@@ -59,5 +57,11 @@
 		<li><a href="#"><img src="http://dummyimage.com/160x50/f7f7f7/cfcfcf.png&text=I+am+FANCY!"></a></li>
 		<li><a href="#"><img src="http://dummyimage.com/160x50/f7f7f7/cfcfcf.png&text=I+am+FANCY!"></a></li>
 	</ul>
+	<section>
+		<div class="section_desc">
+			<h3>Who is CCMS</h3>
+			<h2>Center for Computational Mass Spectrometry</h2>
+		</div>
+	</section>	
 </body>
 </html>
