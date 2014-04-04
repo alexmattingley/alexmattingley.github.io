@@ -28,7 +28,7 @@
 				<h3>Featured Research Area</h3>
 				<h1>Molecular Spectral Networks</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in. Morbi nec elit eget magna placerat consequat a sed nulla.</p>
-				<ul>
+				<ul class="button_display">
 					<li><a href="#"></a><button id="button_white">Try a Demo</button></li>
 					<li><a href="#"></a><button id="button_clear">Learn More</button></li>
 				</ul>
@@ -59,8 +59,26 @@
 	</ul>
 	<section>
 		<div class="section_desc">
-			<h3>Who is CCMS</h3>
+			<h4>Who is CCMS</h4>
 			<h2>Center for Computational Mass Spectrometry</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in. Um sagittis ultrices orci, ut volutpat urna porttitor in.</p>
+			<a href="#"></a><button id="button_green_bg">About Us</button>
+		</div>
+	</section>
+	<section class="secondary_bg_color">
+		<div class="section_desc">
+			<h4>What CCMS Does</h4>
+			<h2>Serving the Biomedical Research Community</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.</p>
+			<ul class="button_display">
+					<li><a href="#"></a><button id="button_green_bg">Get Sarted</button></li>
+					<li><a href="#"></a><button id="button_green_txt">Learn More</button></li>
+			</ul>
+		</div>
+		<div class="section_desc section_desc_img">
+			<h4>University of California San Diego</h4>
+			<h3>Department of Computer Science & Engineering</h3>
 		</div>
 	</section>	
 </body>

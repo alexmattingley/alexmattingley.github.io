@@ -42,17 +42,37 @@ a {
 /****************************
 Colors/Backgrounds
 *****************************/
-.primary_color_bg {
-	background: url('../img/Primary_bg.png');
-}
-.main-nav a,
-.slide_text {
-	color: white;
-}
-.sub_logo {
-	background-color: #f7f7f7;
-}
-
+/****************************
+Body/universal
+*****************************/
+/****************************
+Header styles
+*****************************/
+	.primary_color_bg {
+		background: url('../img/Primary_bg.png');
+	}
+	.main-nav a,
+	.slide_text {
+		color: white;
+	}
+	.sub_logo {
+		background-color: #f7f7f7;
+	}
+/****************************
+section_desc styles
+*****************************/
+	.section_desc h4 {
+		color: #7AFA73;
+	}
+	.section_desc h3 {
+		color: white;
+	}
+	.section_desc p {
+		color: #505050;
+	}
+	.secondary_bg_color {
+		background: #f7f7f7;
+	}
 /****************************
 Break 1
 *****************************/
@@ -90,7 +110,18 @@ Break 1
 	}
 	.sub_logo {
 		text-align: center;
-		display: hidden;
+	}
+	.section_desc {
+		width: 80%;
+		text-align: center;
+		margin: 2rem auto;
+		padding: 2rem 0;
+	}
+	.section_desc_img {
+		background: url('http://ucsdnews.ucsd.edu/archive/graphics/images/2010/10-05_atkinson_hall.jpg');
+		background-repeat: no-repeat;
+		width: 80%;
+		height: 380px;
 	}
 
 
@@ -121,7 +152,14 @@ Break 2
 		width: 100%;
 		background-repeat: no-repeat;
 	}
-	
+	.section_desc {
+		width: 60%;
+		text-align: center;
+		margin: 2rem auto;
+	}
+	.button_display li {
+		display: inline-block;
+	}
 
 
 /****************************
