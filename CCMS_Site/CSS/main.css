@@ -25,7 +25,9 @@ li,
 a {
   list-style: none;
   text-decoration: none;
-  color: white;
+}
+i {
+	color: white;
 }
 .arrow-right,
 .arrow-left {
@@ -59,13 +61,17 @@ Header styles
 		background-color: #f7f7f7;
 	}
 /****************************
-section_desc styles
+section_desc/section_feed styles
 *****************************/
-	.section_desc h4 {
+	.section_desc h4,
+	.section_feed h4 {
 		color: #7AFA73;
 	}
 	.section_desc h3 {
 		color: white;
+	}
+	.section_feed p {
+		color: black;
 	}
 	.section_desc p {
 		color: #505050;
@@ -73,6 +79,31 @@ section_desc styles
 	.secondary_bg_color {
 		background: #f7f7f7;
 	}
+	.section_feed h6 {
+		color: #505050;
+	}
+	.section_feed a{
+		color: #7AFA73;
+		border: solid 2px #7AFA73;
+		border-radius: 3px;
+		padding: 5px 15px;
+		display: inline-block;
+	}
+	.section_feed .button {
+		margin: 40px auto;
+		display: inline-block;
+	}
+	.primary_color_bg .section_desc h2,
+	.primary_color_bg .section_desc h5 {
+		color: white;
+	}
+	.section_desc .white {
+		color: 	#30AC59;
+		background: white;
+		border-radius: 3px;
+		padding: 5px 15px;
+	}
+
 /****************************
 Break 1
 *****************************/
@@ -122,6 +153,28 @@ Break 1
 		background-repeat: no-repeat;
 		width: 80%;
 		height: 380px;
+		/*padding: 6rem 8rem;*/
+	}
+	.section_feed .secondary_bg_color {
+		border-bottom: solid #7AFA73 5px;
+	}
+
+	.section_feed {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	}
+	
+	.section_feed img {
+		width: 100%;
+	}
+	.primary_color_bg .section_desc {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.primary_color_bg .section_desc .button {
+		display: inline-block;
+		margin-top: 20px;
 	}
 
 
@@ -129,7 +182,7 @@ Break 1
 /****************************
 Break 2
 *****************************/
-@media (min-width: 320px) {
+@media (min-width: 321px) {
 	
 	body {
 		font-size: 1.05rem;
@@ -153,7 +206,7 @@ Break 2
 		background-repeat: no-repeat;
 	}
 	.section_desc {
-		width: 60%;
+		width: 80%;
 		text-align: center;
 		margin: 2rem auto;
 	}
@@ -208,6 +261,38 @@ Break 3
 	.sub_logo img {
 		width: 18%;
 	}
+	.section_feed {
+		width: 100%;
+	}
+	
+	.section_feed .secondary_bg_color {
+		min-height: 24rem;
+		text-align: left;
+	}
+
+	.section_feed li {
+		display: inline-block;
+		width: 25%;
+		vertical-align: top;
+	}
+
+	.section_feed li:first-child,
+	.section_feed li:nth-child(2) {
+		margin-right: 2%;
+	}
+	.section_feed h4,
+	.section_feed p,
+	.section_feed h6 {
+		padding-left: 10px;
+	}
+	/*.section_feed .secondary_bg_color p {
+		overflow:hidden;
+		white-space: nowrap; 
+		text-overflow:ellipsis;
+	}*/
+
+	/*The above is a potential solution for these boxes but I couldn't figure out how
+	to make it do it just on the second line or how to make it clickable*/
 }
 
 /****************************
@@ -249,6 +334,13 @@ Break 4
 	}
 	.hero_slider {
 		margin-top: 30px;
+	}
+	.section_feed .secondary_bg_color {
+		min-height: 28.57142857rem;
+	}
+	.section_feed li:first-child,
+	.section_feed li:nth-child(2) {
+		margin-right: 2%;
 	}
 }
 
