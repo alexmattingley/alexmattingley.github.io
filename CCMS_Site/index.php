@@ -29,8 +29,8 @@
 				<h1>Molecular Spectral Networks</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in. Morbi nec elit eget magna placerat consequat a sed nulla.</p>
 				<ul class="button_display">
-					<li><a href="#"></a><button id="button_white">Try a Demo</button></li>
-					<li><a href="#"></a><button id="button_clear">Learn More</button></li>
+					<li><a class="button white" href="#">Try a Demo</a></li>
+					<li><a class="button clear_white" href="#">Learn More</a></li>
 				</ul>
 				<ul class="arrows">
 					<li class="arrow-left">
@@ -63,7 +63,7 @@
 			<h2>Center for Computational Mass Spectrometry</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in. Um sagittis ultrices orci, ut volutpat urna porttitor in.</p>
-			<a href="#"><button id="button_green_bg">About Us</button></a>
+			<a class="button green" href="#">About Us</a>
 		</div>
 	</section>
 	<section class="secondary_bg_color">
@@ -72,8 +72,8 @@
 			<h2>Serving the Biomedical Research Community</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.</p>
 			<ul class="button_display">
-					<li><a href="#"><button id="button_green_bg">Get Sarted</button></a></li>
-					<li><a href="#"><button id="button_green_txt">Learn More</button></a></li>
+					<li><a class="button green" href="#">Get Sarted</a></li>
+					<li><a class="button clear_green" href="#">Learn More</a></li>
 			</ul>
 		</div>
 		<div class="section_desc section_desc_img">
@@ -92,10 +92,10 @@
 				<div class="secondary_bg_color">
 					<img src="http://lorempixel.com/320/200">
 					<h4>Latest Projects</h4>
-					<p class="truncate">Peptide fragmentation models for new enzymes</p>
+					<p>Peptide fragmentation models for new enzymes</p>
 					<h6>Collaborator: Elizabeth Komives</h6>
 				</div>	
-				<a class="button" href="#">View All</a>
+				<a class="button clear_green" href="#">View All</a>
 			</li>
 			<li>
 				<div class="secondary_bg_color">
@@ -104,7 +104,7 @@
 					<p>SpliceDB: Splice Graph Proteomics Tools</p>
 					<h6>PI Contact: Vineet Bafna </h6>
 				</div>
-				<a class="button" href="#">View All</a>
+				<a class="button clear_green" href="#">View All</a>
 			</li>
 			<li>
 				<div class="secondary_bg_color">
@@ -113,7 +113,7 @@
 					<p>RECOMB Satellite Conference on Computational Proteomics.</p>
 					<h6>Location: UCSD Calit2 Building</h6>
 				</div>
-				<a class="button" href="#">View All</a>
+				<a class="button clear_green" href="#">View All</a>
 			</li>
 		</ul>
 	</section>
@@ -123,6 +123,56 @@
 			<h5>Contact us and start gaining insight into your research.</h5>
 			<a class="button white" href="#">Get Started</a>
 		</div>	
-	</section>	
+	</section>
+	<section class="bottom">
+		<div class="section_desc">
+			<h2>Research Lab News</h2>
+			<p>Some of Pavels research that has been covered in the news</p>
+		</div>
+		<ul class="section_feed">
+			<li>
+				<div class="secondary_bg_color">
+					<img src="http://lorempixel.com/320/200">
+					<h4>January 2010</h4>
+					<p>De novo sequencing of Nonribosonal Peptides</p>
+					<h6>Peptalk 2010 Podcast</h6>
+				</div>	
+			</li>
+			<li>
+				<div class="secondary_bg_color">
+					<img src="http://lorempixel.com/320/200">
+					<h4>July 2010</h4>
+					<p>New drugs faster from natural componds: A UC San Diego breakthrough</p>
+					<h6>Genetic Engineering & Biotechnology News</h6>
+				</div>
+			</li>
+			<li>
+				<div class="secondary_bg_color">
+					<img src="http://lorempixel.com/320/200">
+					<h4>December 2008</h4>
+					<p>UCSD and Genetech Scientists Develp Potentially Disruptive Antibody Sequencing Technology</p>
+					<h6>Location: UCSD Calit2 Building</h6>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<footer>
+		<a class="up-arrow" href="#">
+			<i class="fa fa-arrow-up fa-lg"></i>
+		</a>
+		<ul class="footer main-nav">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Research Areas</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Software Tools</a></li>
+			<li><a href="#">Service</a></li>
+			<li><a href="#">Resources</a></li>
+			<li><a href="#">Sign In</a></li>
+		</ul>
+		<a href="#" class="footer-logo"></a>
+		<ul class="social_media_foot">
+			<li><a href="#"><i class"fa fa-facebook-square fa-lg"></i></a></li>
+		</ul>
+	</footer>	
 </body>
 </html>

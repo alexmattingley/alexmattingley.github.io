@@ -39,7 +39,6 @@ i {
 	margin-bottom: 0px;
 }
 
-
  
 /****************************
 Colors/Backgrounds
@@ -53,7 +52,7 @@ Header styles
 	.primary_color_bg {
 		background: url('../img/Primary_bg.png');
 	}
-	.main-nav a,
+	header .main-nav a,
 	.slide_text {
 		color: white;
 	}
@@ -82,31 +81,59 @@ section_desc/section_feed styles
 	.section_feed h6 {
 		color: #505050;
 	}
-	.section_feed a{
-		color: #7AFA73;
-		border: solid 2px #7AFA73;
-		border-radius: 3px;
-		padding: 5px 15px;
-		display: inline-block;
-	}
-	.section_feed .button {
-		margin: 40px auto;
-		display: inline-block;
-	}
+	
 	.primary_color_bg .section_desc h2,
 	.primary_color_bg .section_desc h5 {
 		color: white;
 	}
-	.section_desc .white {
-		color: 	#30AC59;
-		background: white;
+
+	/****************************
+	Footer Styles
+	*****************************/	
+	
+	footer .up-arrow i {
+		background: #7AFA73;
+	}
+	footer .social_media_foot li {
+		color: black;
+	}
+
+
+	/****************************
+	Button Styles
+	*****************************/
+
+	.button {
 		border-radius: 3px;
 		padding: 5px 15px;
 	}
+	.white {
+		color: 	#30AC59;
+		background: white;
+		border: solid white 2px;
+	}
+	.clear_white {
+		color: white;
+		border: solid white 2px;
+
+	}
+	.green {
+		color: white;
+		background: #7AFA73;
+		border: solid #7AFA73 2px;
+	}
+	.clear_green {
+		color: #7AFA73;
+		border: solid #7AFA73 2px; 
+	}
 
 /****************************
-Break 1
+Layout Mobile/default
 *****************************/
+/****************************
+Header Layout
+*****************************/
+
 	.main-nav li {
 		margin: 1.4rem;
 		text-align: center;
@@ -136,12 +163,18 @@ Break 1
 		width: 100%;
 		background-repeat: no-repeat;
 	}
+/****************************
+Sub logo Layout
+*****************************/
 	.sub_logo li {
 		text-align: center;
 	}
 	.sub_logo {
 		text-align: center;
 	}
+/****************************
+section_desc/ section_feed Layout
+*****************************/
 	.section_desc {
 		width: 80%;
 		text-align: center;
@@ -160,9 +193,9 @@ Break 1
 	}
 
 	.section_feed {
-	width: 80%;
-	margin: auto;
-	text-align: center;
+		width: 80%;
+		margin: auto;
+		text-align: center;
 	}
 	
 	.section_feed img {
@@ -177,7 +210,35 @@ Break 1
 		margin-top: 20px;
 	}
 
-
+	.section_feed .button {
+		margin: 40px auto;
+		display: inline-block;
+	}
+	.button_display .button {
+		display: inline-block;
+	}
+	.button_display .clear_green,
+	.button_display .clear_white {
+		margin-top: 10px;
+	}
+	.bottom li {
+		margin-bottom: 40px;
+	}
+/****************************
+Footer Layout
+*****************************/
+	footer .up-arrow i {
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+		display: block;
+	}
+	.footer-logo {
+		background: url('../img/ccms_footer_logo.png') no-repeat left center;
+		height: 100px;
+		width: 100%;
+		display: block;
+	}
 
 /****************************
 Break 2
@@ -187,7 +248,9 @@ Break 2
 	body {
 		font-size: 1.05rem;
 	}
-
+/****************************
+Header Layout (2)
+*****************************/
 	
 	.main-logo {
 		height: 7.14285714rem;
@@ -198,13 +261,15 @@ Break 2
 		text-align: left;
 		margin-left: 1.5rem;
 	}
-
 	.slide_img {
 		background-image: url('http://lorempixel.com/700/400');
 		height: 300px;
 		width: 100%;
 		background-repeat: no-repeat;
 	}
+/****************************
+Section_desc(2)
+*****************************/
 	.section_desc {
 		width: 80%;
 		text-align: center;
@@ -222,6 +287,9 @@ Break 3
 	body {
 		font-size: 1.1rem;
 	}
+/****************************
+Header Layout(3)
+*****************************/
 	.main-nav li {
 		margin: 0 1.3rem;
 		text-align: center;
@@ -239,12 +307,12 @@ Break 3
 	.slide_text > * {
 		text-align: left;
 	}
-	.slide_text {
+	.slide_text { 
 		float: left;
 		width: 45%;
-		margin-top: 0px;
 		margin-left: 2%;
 	}
+
 	.slide_img {
 		background-image: url('http://lorempixel.com/450/500');
 		height: 500px;
@@ -255,12 +323,18 @@ Break 3
 	.hero_slider {
 		margin-top: 30px;
 	}
+/****************************
+Sub logo(3)
+*****************************/
 	.sub_logo li {
 		display: inline;
 	}
 	.sub_logo img {
 		width: 18%;
 	}
+/****************************
+Section_feed/Section_desc(3)
+*****************************/
 	.section_feed {
 		width: 100%;
 	}
@@ -285,6 +359,9 @@ Break 3
 	.section_feed h6 {
 		padding-left: 10px;
 	}
+	.bottom {
+		margin-bottom: 20px;
+	}
 	/*.section_feed .secondary_bg_color p {
 		overflow:hidden;
 		white-space: nowrap; 
@@ -293,12 +370,18 @@ Break 3
 
 	/*The above is a potential solution for these boxes but I couldn't figure out how
 	to make it do it just on the second line or how to make it clickable*/
+/****************************
+Footer(3)
+*****************************/
 }
 
 /****************************
 Break 4
 *****************************/
 @media (min-width: 1130px) {
+/****************************
+Header(4)
+*****************************/
 	.main-nav li {
 		display: inline-block;
 		margin-right: 1.4rem;
@@ -325,6 +408,9 @@ Break 4
 		margin-top: 0px;
 		margin-left: 2%;
 	}
+	.slide_text h3 {
+		margin-top: 150px;
+	}
 	.slide_img {
 		background-image: url('http://lorempixel.com/700/500');
 		height: 500px;
@@ -335,6 +421,9 @@ Break 4
 	.hero_slider {
 		margin-top: 30px;
 	}
+/****************************
+Section_feed/Section_desc (4)
+*****************************/
 	.section_feed .secondary_bg_color {
 		min-height: 28.57142857rem;
 	}
@@ -342,6 +431,14 @@ Break 4
 	.section_feed li:nth-child(2) {
 		margin-right: 2%;
 	}
+	.bottom {
+		margin-bottom: 40px;
+	}
+/****************************
+Footer
+*****************************/
+
+
 }
 
 /****************************
