@@ -90,14 +90,23 @@ section_desc/section_feed styles
 	/****************************
 	Footer Styles
 	*****************************/	
-	
+	footer {
+		background: #222222;
+	}
+
+	/*IMPORTANT! OVERRIDES FOOTER COLOR DEFAULT*/
 	footer .up-arrow i {
 		background: #7AFA73;
 	}
-	footer .social_media_foot li {
-		color: black;
+	footer h6 {
+		color: white;
 	}
-
+	.copyright h6:first-child{
+		font-style: italic;
+	}
+	.footer li a {
+		color: #7AFA73;
+	}
 
 	/****************************
 	Button Styles
@@ -234,11 +243,21 @@ Footer Layout
 		display: block;
 	}
 	.footer-logo {
-		background: url('../img/ccms_footer_logo.png') no-repeat left center;
+		background: url('../img/ccms_footer_logo.png') no-repeat center center;
 		height: 100px;
 		width: 100%;
 		display: block;
 	}
+	.social_media_foot li {
+		display: inline-block;
+	}
+	.social_media_foot {
+		text-align: center;
+	}
+	.copyright {
+		text-align: center;
+	}
+
 
 /****************************
 Break 2
@@ -373,7 +392,13 @@ Section_feed/Section_desc(3)
 /****************************
 Footer(3)
 *****************************/
-}
+/*	footer .footer-logo {
+	 float: left;
+	 display: block;
+	 width: 35%;
+	}
+
+}*/
 
 /****************************
 Break 4

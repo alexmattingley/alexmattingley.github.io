@@ -171,8 +171,15 @@
 		</ul>
 		<a href="#" class="footer-logo"></a>
 		<ul class="social_media_foot">
-			<li><a href="#"><i class"fa fa-facebook-square fa-lg"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+			<li><a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
 		</ul>
+		<div class="copyright">
+			<h6>Copyright &copy; <?php echo date("Y") ?> The regents of the University of California</h6>
+			<h6>All Rights Reserved</h6>
+		</div>
 	</footer>	
 </body>
 </html>
