@@ -19,6 +19,7 @@ html {
 
 body {
 	font-size: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 li,
@@ -59,6 +60,9 @@ Header styles
 	.sub_logo {
 		background-color: #f7f7f7;
 	}
+	header .main-nav li a:hover {
+		color: grey;
+	}
 /****************************
 section_desc/section_feed styles
 *****************************/
@@ -66,25 +70,28 @@ section_desc/section_feed styles
 	.section_feed h4 {
 		color: #7AFA73;
 	}
-	.section_desc h3 {
-		color: white;
-	}
 	.section_feed p {
 		color: black;
 	}
-	.section_desc p {
+	.section_desc p,
+	.section_feed h6 {
 		color: #505050;
 	}
 	.secondary_bg_color {
 		background: #f7f7f7;
 	}
 	.section_feed h6 {
-		color: #505050;
+		font-style: italic;
 	}
 	
+	.section_desc h3,
 	.primary_color_bg .section_desc h2,
 	.primary_color_bg .section_desc h5 {
 		color: white;
+	}
+	.section_desc h2,
+	.section_desc p {
+		font-weight: 300;
 	}
 
 	/****************************
@@ -106,6 +113,9 @@ section_desc/section_feed styles
 	}
 	.footer li a {
 		color: #7AFA73;
+	}
+	footer .main-nav li a:hover {
+		color: white;
 	}
 
 	/****************************
@@ -276,10 +286,6 @@ Header Layout (2)
 		width: 100%;
 		margin-top: 0px;
 	}
-	.slide_text > * {
-		text-align: left;
-		margin-left: 1.5rem;
-	}
 	.slide_img {
 		background-image: url('http://lorempixel.com/700/400');
 		height: 300px;
@@ -307,11 +313,14 @@ Break 3
 	body {
 		font-size: 1.1rem;
 	}
+	.button_display li:nth-child(2) {
+		margin-left: 15px;
+	}
 /****************************
 Header Layout(3)
 *****************************/
 	.main-nav li {
-		margin: 0 1.3rem;
+		margin: 1rem 1.3rem;
 		text-align: center;
 		display: inline-block;
 	}
@@ -330,7 +339,7 @@ Header Layout(3)
 	.slide_text { 
 		float: left;
 		width: 45%;
-		margin-left: 2%;
+		margin-left: 1.5rem;
 	}
 
 	.slide_img {
@@ -345,6 +354,9 @@ Header Layout(3)
 	}
 	header {
 		padding: 15px;
+	}
+	.arrows {
+		margin-top: 15px;
 	}
 /****************************
 Sub logo(3)
@@ -426,13 +438,15 @@ Footer(3)
 /****************************
 Break 4
 *****************************/
-@media (min-width: 1130px) {
+@media (min-width: 1140px) {
 /****************************
 Header(4)
 *****************************/
 	.main-nav li {
 		display: inline-block;
 		margin-right: 1.4rem;
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 	.main-nav {
 		float: right;
@@ -453,11 +467,8 @@ Header(4)
 	.slide_text {
 		float: left;
 		width: 45%;
-		margin-top: 0px;
+		padding-top: 60px;
 		margin-left: 2%;
-	}
-	.slide_text h3 {
-		margin-top: 150px;
 	}
 	.slide_img {
 		background-image: url('http://lorempixel.com/700/500');
@@ -468,6 +479,9 @@ Header(4)
 	}
 	.hero_slider {
 		margin-top: 30px;
+	}
+	.arrows {
+		margin-top: 50px;
 	}
 /****************************
 Section_feed/Section_desc (4)

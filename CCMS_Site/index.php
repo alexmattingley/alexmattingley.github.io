@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- <link rel="stylesheet" href="css/grid.css"> -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -20,7 +21,7 @@
 				<li><a href="#">Software Tools</a></li>
 				<li><a href="#">Service</a></li>
 				<li><a href="#">Resources</a></li>
-				<li><a href="#">Sign In</a></li>
+				<li><a class="button clear_white" href="#">Sign In</a></li>
 			</ul>
 		</header>
 		<div class="hero_slider primary_color_bg group">
@@ -168,7 +169,7 @@
 				<li><a href="#">Software Tools</a></li>
 				<li><a href="#">Service</a></li>
 				<li><a href="#">Resources</a></li>
-				<li><a href="#">Sign In</a></li>
+				<li><a class="button clear_green" href="#">Sign In</a></li>
 			</ul>
 			<a href="#" class="footer-logo"></a>
 			<ul class="social_media_foot">
