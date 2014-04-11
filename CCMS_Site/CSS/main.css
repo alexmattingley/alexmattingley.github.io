@@ -244,7 +244,7 @@ Footer Layout
 	}
 	.footer-logo {
 		background: url('../img/ccms_footer_logo.png') no-repeat center center;
-		height: 100px;
+		height: 30px;
 		width: 100%;
 		display: block;
 	}
@@ -297,6 +297,7 @@ Section_desc(2)
 	.button_display li {
 		display: inline-block;
 	}
+}
 
 
 /****************************
@@ -387,18 +388,34 @@ Section_feed/Section_desc(3)
 		text-overflow:ellipsis;
 	}*/
 
-	/*The above is a potential solution for these boxes but I couldn't figure out how
+	/*The above is a potential solution for section_feed boxes but I couldn't figure out how
 	to make it do it just on the second line or how to make it clickable*/
 /****************************
 Footer(3)
 *****************************/
-/*	footer .footer-logo {
+	.inner_footer {
+		padding: 15px;
+	}
+	footer .footer-logo {
 	 float: left;
 	 display: block;
-	 width: 35%;
+	 width: 137px;
+	}
+	.copyright {
+		text-align: left;
+		float: left;
+		width: 35%;
+		clear: both;
+	}
+	footer .social_media_foot {
+		float: right;
+	
+	}
+	footer .main-nav {
+		display: none;
 	}
 
-}*/
+}
 
 /****************************
 Break 4
@@ -462,8 +479,9 @@ Section_feed/Section_desc (4)
 /****************************
 Footer
 *****************************/
-
-
+	footer .main-nav {
+		display: block;
+	}
 }
 
 /****************************
