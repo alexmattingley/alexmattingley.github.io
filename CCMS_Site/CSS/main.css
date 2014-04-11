@@ -191,8 +191,7 @@ section_desc/ section_feed Layout
 		padding: 2rem 0;
 	}
 	.section_desc_img {
-		background: url('http://ucsdnews.ucsd.edu/archive/graphics/images/2010/10-05_atkinson_hall.jpg');
-		background-repeat: no-repeat;
+		background: url('../img/UCSD_campus_photo.png') no-repeat center;
 		width: 80%;
 		height: 380px;
 		/*padding: 6rem 8rem;*/
@@ -247,6 +246,7 @@ Footer Layout
 		height: 30px;
 		width: 100%;
 		display: block;
+		margin-bottom: 20px;
 	}
 	.social_media_foot li {
 		display: inline-block;
@@ -334,7 +334,7 @@ Header Layout(3)
 	}
 
 	.slide_img {
-		background-image: url('http://lorempixel.com/450/500');
+		background-image: url('http://lorempixel.com/550/500');
 		height: 500px;
 		width: 45%;
 		background-repeat: no-repeat;
@@ -342,6 +342,9 @@ Header Layout(3)
 	}
 	.hero_slider {
 		margin-top: 30px;
+	}
+	header {
+		padding: 15px;
 	}
 /****************************
 Sub logo(3)
@@ -382,6 +385,9 @@ Section_feed/Section_desc(3)
 	.bottom {
 		margin-bottom: 20px;
 	}
+	.section_desc {
+		width: 60%;
+	}
 	/*.section_feed .secondary_bg_color p {
 		overflow:hidden;
 		white-space: nowrap; 
@@ -394,7 +400,7 @@ Section_feed/Section_desc(3)
 Footer(3)
 *****************************/
 	.inner_footer {
-		padding: 15px;
+		padding: 50px;
 	}
 	footer .footer-logo {
 	 float: left;
@@ -404,7 +410,7 @@ Footer(3)
 	.copyright {
 		text-align: left;
 		float: left;
-		width: 35%;
+		max-width: 337px;
 		clear: both;
 	}
 	footer .social_media_foot {
@@ -437,7 +443,7 @@ Header(4)
 		float: left;
 		background: url('../img/ccms_logo.png') no-repeat left center;
 		height: 100px;
-		width: 300px;
+		width: 215px;
 		margin-top: 0px; 
 		margin-right: -50px;
 	}
@@ -477,11 +483,23 @@ Section_feed/Section_desc (4)
 		margin-bottom: 40px;
 	}
 /****************************
-Footer
+Footer (4)
 *****************************/
 	footer .main-nav {
 		display: block;
+		height: 60px;
+		line-height: 22px;
 	}
+	footer .main-nav li:last-child {
+		margin-right: 0px;
+	}
+	.social_media_foot {
+		clear: right;
+	}
+	.copyright {
+		margin-top: -50px; 
+	}
+
 }
 
 /****************************

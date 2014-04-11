@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="hero_bar primary_color_bg">
-		<header id="header" class="group">
+		<header class="group">
 			<a href="#" class="main-logo"></a>
 			<ul class="main-nav">
 				<li><a href="#">About</a></li>
