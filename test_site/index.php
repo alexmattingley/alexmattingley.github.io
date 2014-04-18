@@ -3,31 +3,6 @@
 <head>
 <title>Responsive 3-Line Menu</title>
 <style type="text/css">
-* {
-margin: 0;
-padding: 0;
-}
-ul {
-width:100%;
-}
-
-li {
-width:18%;
-float:left;
-border-right: 1px solid #eee;
-}
-li:last-child {
-border-right:none;
-}
-
-li a {
-display: block;
-width:80%;
-background:#ddd;
-padding:4% 10%;
-font-size:1.35em;
-text-decoration: none;
-}
 
 @media screen and (max-width: 768px) {
 #menu {
@@ -40,10 +15,10 @@ text-align: center;
 #nav.js {
 display: none;
 }
-ul {
+#nav ul {
 width:100%;
 }
-li {
+#nav li {
 width:100%;
 border-right:none;
 }

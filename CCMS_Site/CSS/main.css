@@ -13,9 +13,6 @@ Site Wide Styles/Defaults
 	box-sizing: border-box;
 }
 
-html {
-	max-width: 1430px;
-}
 
 body {
 	font-size: 100%;
@@ -39,7 +36,10 @@ i {
 .slide_img {
 	margin-bottom: 0px;
 }
-
+.style_name {
+	font-size: 1.5rem;
+	color: red;
+}
  
 /****************************
 Colors/Backgrounds
@@ -67,14 +67,19 @@ Header styles
 section_desc/section_feed styles
 *****************************/
 	.section_desc h4,
-	.section_feed h4 {
+	.section_feed h4,
+	.secondary_desc h4,
+	.people_unique_desc h4 {
 		color: #7AFA73;
 	}
 	.section_feed p {
 		color: black;
 	}
 	.section_desc p,
-	.section_feed h6 {
+	.section_feed h6,
+	.people_unique_desc p,
+	.col_3_logo p,
+	.secondary_desc p {
 		color: #505050;
 	}
 	.secondary_bg_color {
@@ -90,7 +95,10 @@ section_desc/section_feed styles
 		color: white;
 	}
 	.section_desc h2,
-	.section_desc p {
+	.section_desc p,
+	.col_3_logo h2,
+	.people_unique_desc h2,
+	.secondary_desc h2 {
 		font-weight: 300;
 	}
 
@@ -242,6 +250,58 @@ section_desc/ section_feed Layout
 	.bottom li {
 		margin-bottom: 40px;
 	}
+/****************************
+Secondary_desc
+*****************************/	
+
+	.Secondary_desc .graph_img,
+	.Secondary_desc .graph_desc {
+		text-align: center;
+	}
+	.Secondary_desc {
+		width: 80%;
+		margin: 3rem auto;
+	}
+	.graph_img img {
+		width: 100%;
+	}
+/****************************
+3_col_logo
+*****************************/	
+	.col_3_logo {
+		width: 80%;
+		margin: 20px auto;
+		text-align: center;
+	}
+	.col_3_logo li {
+		display: inline-block;
+		margin: 20px 0;
+	}
+/****************************
+Unique 1
+*****************************/	
+	.leader_head {
+		margin-bottom: 0px;
+	}
+	.leader_img {
+		text-align: center;
+	}
+	.leader_img img {
+		width: 100%;
+	}
+	.people_unique_desc {
+		text-align: center;
+		width: 80%;
+		margin: 20px auto 40px auto;
+	}
+	.leader_detail li {
+		margin: 40px auto;
+	}
+	.fa-phone {
+		color: black;
+	}
+
+
 /****************************
 Footer Layout
 *****************************/
@@ -409,6 +469,53 @@ Section_feed/Section_desc(3)
 	/*The above is a potential solution for section_feed boxes but I couldn't figure out how
 	to make it do it just on the second line or how to make it clickable*/
 /****************************
+Secondary Desc
+*****************************/
+	.graph_img {
+		float: left;
+		width: 45%
+	}
+
+	.secondary_desc .graph_desc {
+		float: right;
+		width: 45%;
+		text-align: left;
+	}
+
+/****************************
+col_3_logo(3)
+*****************************/
+	.col_3_logo {
+		width: 100%;
+		margin: 60px auto;
+	}
+	.col_3_logo li {
+		width: 30%;
+		padding:0 1.2rem;
+	}
+/****************************
+Unique 1(3)
+*****************************/
+	.leader_head {
+		margin-bottom: 0px;
+	}
+	.leader_detail li {
+		display: inline-block;
+		width: 30%;
+		padding: 0 1rem;
+		vertical-align: top;
+	}
+	.leader_detail {
+		margin: 0 auto;
+	}
+	.leader_img img {
+		width: 60%;
+	}
+	.picture_detail {
+		width: 80%;
+		margin: 0 auto;
+	}
+/****************************
 Footer(3)
 *****************************/
 	.inner_footer {
@@ -490,11 +597,45 @@ Section_feed/Section_desc (4)
 		min-height: 28.57142857rem;
 	}
 	.section_feed li:first-child,
-	.section_feed li:nth-child(2) {
+	.section_feed li:nth-child(2),
+	.section_feed li:nth-child(4),
+	.section_feed li:nth-child(5) {
 		margin-right: 2%;
 	}
 	.bottom {
 		margin-bottom: 40px;
+	}
+/****************************
+col_3_logo
+*****************************/
+	.col_3_logo {
+		width: 80%;
+	}
+/****************************
+Unique 1 (4)
+*****************************/
+	.leader_img {
+		float: left;
+		width: 40%;
+	}
+	.people_unique_desc {
+		float: right;
+		width: 60%;
+		margin-top: 0;
+		text-align: left;
+		}
+	.leader_detail li {
+		margin: -20px auto 0 auto;
+	}
+	.leader_detail {
+		margin: 0 auto 30px auto; 
+	}
+	.picture_detail,
+	.leader_detail {
+		margin-left: 0px;
+	}
+	.leader_detail li:first-child {
+		padding-left: 0;
 	}
 /****************************
 Footer (4)
