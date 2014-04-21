@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.css">
+	<script src="responsive-nav.js-master/responsive-nav.js"></script>
 </head>
 <body>
 
@@ -18,15 +20,17 @@
 	<div class="hero_bar primary_color_bg">
 		<header class="group">
 			<a href="#" class="main-logo"></a>
-			<ul class="main-nav">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Research Areas</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Software Tools</a></li>
-				<li><a href="#">Service</a></li>
-				<li><a href="#">Resources</a></li>
-				<li><a class="button clear_white" href="#">Sign In</a></li>
-			</ul>
+			<nav class="nav-collapse js">
+				<ul class="main-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Research Areas</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Software Tools</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Resources</a></li>
+					<li><a class="button clear_white" href="#">Sign In</a></li>
+				</ul>
+			</nav>
 		</header>
 		<div class="hero_slider primary_color_bg group">
 			<div class="slide_text">
@@ -245,6 +249,9 @@
 				<h6>All Rights Reserved</h6>
 			</div>
 		</div>
-	</footer>	
+	</footer>
+<script>
+  var nav = responsiveNav(".nav-collapse");
+</script>	
 </body>
 </html>

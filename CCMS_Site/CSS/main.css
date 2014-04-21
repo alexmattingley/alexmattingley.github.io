@@ -63,6 +63,16 @@ Header styles
 	header .main-nav li a:hover {
 		color: grey;
 	}
+	.nav-toggle {
+	float: right;
+	border:0; 
+	font: 0/0 a; 
+	text-shadow: none; 
+	color: transparent; 
+	background: url('../img/hamburger_nav.png');
+	height: 30px;
+	width: 30px;
+	}
 /****************************
 section_desc/section_feed styles
 *****************************/
@@ -169,7 +179,8 @@ Header Layout
 		display: block;
 		background: url('../img/ccms_logo.png') no-repeat left center;
 		height: 100px;
-		width: 100%;
+		width: 280px;
+		float: left;
 		
 	}
 	.slide_text > * {
@@ -343,8 +354,9 @@ Header Layout (2)
 	
 	.main-logo {
 		height: 7.14285714rem;
-		width: 100%;
 		margin-top: 0px;
+		width: 300px;
+		float: left;
 	}
 	.slide_img {
 		background-image: url('http://lorempixel.com/700/400');
@@ -390,7 +402,6 @@ Header Layout(3)
 	}
 	.main-logo {
 		height: 100px;
-		width: 100%;
 		
 	}
 	.slide_text > * {
