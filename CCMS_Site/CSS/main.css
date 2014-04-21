@@ -13,7 +13,9 @@ Site Wide Styles/Defaults
 	box-sizing: border-box;
 }
 
-
+html {
+	min-width: 300px;
+}
 body {
 	font-size: 100%;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -64,15 +66,15 @@ Header styles
 		color: grey;
 	}
 	.nav-toggle {
-	float: right;
-	border:0; 
-	font: 0/0 a; 
-	text-shadow: none; 
-	color: transparent; 
-	background: url('../img/hamburger_nav.png');
-	height: 30px;
-	width: 30px;
-	}
+		float: right;
+		border:0; 
+		font: 0/0 a; 
+		text-shadow: none; 
+		color: transparent; 
+		background: url('../img/hamburger_nav.png');
+		height: 30px;
+		width: 30px;
+		}
 /****************************
 section_desc/section_feed styles
 *****************************/
@@ -171,17 +173,25 @@ Layout Mobile/default
 Header Layout
 *****************************/
 
+	.main-nav {
+		min-height: 350px;
+		clear: both;
+	}
 	.main-nav li {
-		margin: 1.4rem;
+		margin: 1.4rem auto;
 		text-align: center;
 	}
 	.main-logo {
 		display: block;
 		background: url('../img/ccms_logo.png') no-repeat left center;
 		height: 100px;
-		width: 280px;
+		width: 215px;
 		float: left;
+		margin-left: 15px;
 		
+	}
+	.nav-toggle {
+		margin: 35px 15px;
 	}
 	.slide_text > * {
 		text-align: center;
@@ -211,7 +221,7 @@ Sub logo Layout
 		text-align: center;
 	}
 /****************************
-section_desc/ section_feed Layout
+section_desc/ section_feed (3 and 2) Layout
 *****************************/
 	.section_desc {
 		width: 80%;
@@ -261,6 +271,7 @@ section_desc/ section_feed Layout
 	.bottom li {
 		margin-bottom: 40px;
 	}
+
 /****************************
 Secondary_desc
 *****************************/	
@@ -312,7 +323,16 @@ Unique 1
 		color: black;
 	}
 
+/****************************
+Leader_description
+*****************************/
 
+	.leader_description {
+		padding-left: 30px;
+	}
+	.leader_desc_text {
+
+	}
 /****************************
 Footer Layout
 *****************************/
@@ -338,8 +358,7 @@ Footer Layout
 	.copyright {
 		text-align: center;
 	}
-
-
+}
 /****************************
 Break 2
 *****************************/
@@ -353,9 +372,8 @@ Header Layout (2)
 *****************************/
 	
 	.main-logo {
-		height: 7.14285714rem;
 		margin-top: 0px;
-		width: 300px;
+		width: 215px;
 		float: left;
 	}
 	.slide_img {
@@ -391,14 +409,13 @@ Break 3
 /****************************
 Header Layout(3)
 *****************************/
-	.main-nav li {
+	/*.main-nav li {
 		margin: 1rem 1.3rem;
 		text-align: center;
 		display: inline-block;
-	}
+	}*/
 	.main-nav {
 		text-align: left;
-		float: left;
 	}
 	.main-logo {
 		height: 100px;
@@ -424,7 +441,7 @@ Header Layout(3)
 		margin-top: 30px;
 	}
 	header {
-		padding: 15px;
+		padding: 0px;
 	}
 	.arrows {
 		margin-top: 15px;
@@ -454,6 +471,9 @@ Section_feed/Section_desc(3)
 		display: inline-block;
 		width: 25%;
 		vertical-align: top;
+	}
+	.section_feed .col_2 {
+		width: 40%;
 	}
 
 	.section_feed li:first-child,
@@ -527,6 +547,25 @@ Unique 1(3)
 		margin: 0 auto;
 	}
 /****************************
+Leader Description
+*****************************/
+	.leader_description img {
+		margin-bottom: -100px;
+		display: block;
+		float: left;
+		margin-right: 100px;
+	}
+	.leader_description h4 {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	.leader_desc_text {
+		color: white;
+	}
+	.leader_description {
+		padding-left: 100px;
+	}
+/****************************
 Footer(3)
 *****************************/
 	.inner_footer {
@@ -567,8 +606,9 @@ Header(4)
 		margin-bottom: 0;
 	}
 	.main-nav {
+		clear: none;
 		float: right;
-		height: 100px;
+		min-height: 100px;
 		line-height: 100px;
 	}
 	.main-logo {
@@ -578,6 +618,9 @@ Header(4)
 		width: 215px;
 		margin-top: 0px; 
 		margin-right: -50px;
+	}
+	header {
+		padding: 15px;
 	}
 	.slide_text > * {
 		text-align: left;

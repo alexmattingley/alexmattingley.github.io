@@ -20,8 +20,7 @@
 	<div class="hero_bar primary_color_bg">
 		<header class="group">
 			<a href="#" class="main-logo"></a>
-			<nav class="nav-collapse js">
-				<ul class="main-nav">
+				<ul class="main-nav nav-collapse js">
 					<li><a href="#">About</a></li>
 					<li><a href="#">Research Areas</a></li>
 					<li><a href="#">Projects</a></li>
@@ -30,7 +29,6 @@
 					<li><a href="#">Resources</a></li>
 					<li><a class="button clear_white" href="#">Sign In</a></li>
 				</ul>
-			</nav>
 		</header>
 		<div class="hero_slider primary_color_bg group">
 			<div class="slide_text">
@@ -98,7 +96,7 @@
 	</section>
 
 <!-- Style 2 -->
-<p class="style_name">Style 2 (3 fiddy)</p>
+<p class="style_name">Style 2 (3 col)</p>
 
 	<section>
 		<ul class="section_feed">
@@ -131,6 +129,31 @@
 			</li>
 		</ul>
 	</section>
+
+
+<!--Style 2 -->
+<p class="style_name">Style 2 (2 Col)</p>	
+
+<section>
+	<ul class="section_feed">
+		<li class="col_2">
+			<div class="secondary_bg_color">
+					<img src="http://lorempixel.com/320/200">
+					<h4>Latest Projects</h4>
+					<p>Peptide fragmentation models for new enzymes</p>
+					<h6>Collaborator: Elizabeth Komives</h6>
+			</div>	
+		</li>
+		<li class="col_2">
+			<div class="secondary_bg_color">
+					<img src="http://lorempixel.com/320/200">
+					<h4>Latest Projects</h4>
+					<p>Peptide fragmentation models for new enzymes</p>
+					<h6>Collaborator: Elizabeth Komives</h6>
+			</div>	
+		</li>
+	</ul>
+</section>
 
 <!-- Style 3  -->
 <p class="style_name">Style 3</p>
