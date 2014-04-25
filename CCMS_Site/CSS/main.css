@@ -63,7 +63,7 @@ Header styles
 		background-color: #f7f7f7;
 	}
 	header .main-nav li a:hover {
-		color: grey;
+
 	}
 	.nav-toggle {
 		float: right;
@@ -215,10 +215,11 @@ Header Layout
 dropdown_nav
 *****************************/
 	.main-nav ul li {
-		display: none;
+		text-align: left;
 	}
-	.main-nav li:hover > ul {
+	.main-nav li:hover > ul li {
 		display: block;
+		background: grey;
 	}
 	
 /****************************
