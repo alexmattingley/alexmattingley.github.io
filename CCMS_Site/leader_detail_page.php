@@ -17,12 +17,7 @@
 		<header class="group">
 			<a href="#" class="main-logo"></a>
 				<ul class="main-nav nav-collapse js">
-					<li>
-						<a href="#">About</a>
-						<ul class="dropdown_nav">
-							<li>CCMS Team</li>
-						</ul>
-					</li>
+					<li><a href="#">About</a></li>
 					<li><a href="#">Research Areas</a></li>
 					<li><a href="#">Projects</a></li>
 					<li><a href="#">Software Tools</a></li>
@@ -31,6 +26,28 @@
 					<li><a class="button clear_white" href="#">Sign In</a></li>
 				</ul>
 		</header>
+	</div>
+	<div class="leader_description primary_color_bg group">
+		<div class="leader_desc_text">
+			<h4>Executive Producer</h4>
+			<h1>Nuno Bandeira</h1>
+		</div>
+		<img src="img/leader_photo.png">
+	</div>
+	<div class="leader_bottom_content group">
+		<div class="leader_contact_text">
+				<h2>Contact Info</h2>
+				<p><b>Email Address:</b></p>
+				<p>example@example.com</p>
+				<p><b>Phone Number: </b>(858) 534-8666</p>
+				<p><b>Fax: </b>555-555-5555</p>
+				<p><b>Location: </b>Example</p>
+				<p>555 Example Ave</p>
+				<p>San Diego, CA 92104</p>
+		</div>
+		<div class="leader_research_content">
+			<h2>Research Interests</h2>
+		</div>
 	</div>
 </body>
 </html>

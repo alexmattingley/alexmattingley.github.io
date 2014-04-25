@@ -212,6 +212,16 @@ Header Layout
 		background-repeat: no-repeat;
 	}
 /****************************
+dropdown_nav
+*****************************/
+	.main-nav ul li {
+		display: none;
+	}
+	.main-nav li:hover > ul {
+		display: block;
+	}
+	
+/****************************
 Sub logo Layout
 *****************************/
 	.sub_logo li {
@@ -328,10 +338,29 @@ Leader_description
 *****************************/
 
 	.leader_description {
-		padding-left: 30px;
+		text-align: center;
+		margin: auto;
 	}
-	.leader_desc_text {
+	.leader_description img {
+		margin-bottom: -40px;
+	}
+	.leader_desc_text h4 {
+		margin-top: 0;
+	}
+	.leader_contact_text {
+		text-align: center;
+		line-height: .25;
+		margin: 60px auto;
+		border: 1px black solid;
+		width: 90%;
+		max-width: 380px;
 
+	}
+	.leader_contact_text h2 {
+		line-height: 1.5;
+	}
+	.leader_research_content {
+		text-align: center;
 	}
 /****************************
 Footer Layout
@@ -359,6 +388,8 @@ Footer Layout
 		text-align: center;
 	}
 }
+
+
 /****************************
 Break 2
 *****************************/
@@ -394,7 +425,6 @@ Section_desc(2)
 		display: inline-block;
 	}
 }
-
 
 /****************************
 Break 3
@@ -547,24 +577,9 @@ Unique 1(3)
 		margin: 0 auto;
 	}
 /****************************
-Leader Description
+Leader Description (3)
 *****************************/
-	.leader_description img {
-		margin-bottom: -100px;
-		display: block;
-		float: left;
-		margin-right: 100px;
-	}
-	.leader_description h4 {
-		margin-top: 0px;
-		padding-top: 0px;
-	}
-	.leader_desc_text {
-		color: white;
-	}
-	.leader_description {
-		padding-left: 100px;
-	}
+	
 /****************************
 Footer(3)
 *****************************/
@@ -690,6 +705,42 @@ Unique 1 (4)
 	}
 	.leader_detail li:first-child {
 		padding-left: 0;
+	}
+/****************************
+Leader Description (4)
+*****************************/
+	.leader_description img {
+		margin-bottom: -100px;
+		display: block;
+		float: left;
+		margin-right: 0px;
+	}
+	.leader_desc_text {
+		color: white;
+		text-align: left;
+		float: right;
+		width: 60%;
+	}
+	.leader_description {
+		padding-left: 100px; 
+	}
+	.leader_contact_text {
+		margin-left: 100px;
+		margin-top: 0;
+		float: left;
+		text-align: left;
+		border: none;
+		max-width: 350px;
+
+	}
+	.leader_research_content {
+		float: right;
+		text-align: left;
+		width: 60%;
+		padding-left: 70px;
+	}
+	.leader_bottom_content {
+		margin-top: 120px;
 	}
 /****************************
 Footer (4)
