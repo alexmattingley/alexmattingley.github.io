@@ -212,16 +212,24 @@ Header Layout
 		background-repeat: no-repeat;
 	}
 /****************************
-dropdown_nav
+dropdown_nav (everything including header styles for testing go here)
 *****************************/
-	.main-nav ul li {
+	
+	.main-nav li {
 		text-align: left;
 	}
-	.main-nav li:hover > ul li {
-		display: block;
-		background: grey;
+	.main-nav {
+		min-height: 750px;
+		padding-left: 20px;
 	}
-	
+	.dropdown_nav {
+		border-left: 3px solid white;
+		padding: 1px 10px;
+		margin-left: 10px;
+	}
+	.main-nav ul {
+		display: block;
+	}
 /****************************
 Sub logo Layout
 *****************************/
@@ -372,6 +380,17 @@ Footer Layout
 		padding: 10px 0;
 		display: block;
 	}
+	.inner_footer {
+		width: 100%;
+	}
+	.footer {
+		min-height: 350px; 
+		padding-left: 0;
+	}
+
+	.footer li {
+		text-align: center;
+	}
 	.footer-logo {
 		background: url('../img/ccms_footer_logo.png') no-repeat center center;
 		height: 30px;
@@ -388,6 +407,7 @@ Footer Layout
 	.copyright {
 		text-align: center;
 	}
+
 }
 
 
@@ -477,6 +497,7 @@ Header Layout(3)
 	.arrows {
 		margin-top: 15px;
 	}
+
 /****************************
 Sub logo(3)
 *****************************/
@@ -620,23 +641,27 @@ Header(4)
 		margin-right: 1.4rem;
 		margin-top: 0;
 		margin-bottom: 0;
+		border-radius: 3px;
+	}
+	.main-nav  li:nth-child(-n+6) {
+		padding: 0 5px;
 	}
 	.main-nav {
 		clear: none;
 		float: right;
-		min-height: 100px;
-		line-height: 100px;
+		min-height: 60px;
+		line-height: 35px;
 	}
 	.main-logo {
 		float: left;
 		background: url('../img/ccms_logo.png') no-repeat left center;
-		height: 100px;
+		height: 30px;
 		width: 215px;
 		margin-top: 0px; 
 		margin-right: -50px;
 	}
 	header {
-		padding: 15px;
+		padding: 40px 15px;
 	}
 	.slide_text > * {
 		text-align: left;
@@ -660,6 +685,45 @@ Header(4)
 	.arrows {
 		margin-top: 50px;
 	}
+/****************************
+dropdown_nav(4) (everything including header styles for testing go here)
+*****************************/
+	.main-nav ul {
+		display: none;
+		position: absolute;
+	}
+	.main-nav li:hover > ul,
+	.main-nav ul:hover > ul {
+		display: block;
+	}
+	.main-nav li:hover {
+		background: #222222;
+	}
+	
+	.dropdown_nav li {
+		display: block;
+	}
+	.main-nav > li:nth-child(1):hover {
+		height: 67px;
+	}
+	
+	.main-nav > li:nth-child(2):hover {
+		height: 247px;
+	}
+	.dropdown_nav {
+		line-height: 30px;
+		background: #222222;
+		border-radius: 3px;
+	}
+	.dropdown_nav {
+		color: #7AFA73;
+	}
+	.dropdown_nav {
+		border: none;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+	
 /****************************
 Section_feed/Section_desc (4)
 *****************************/
