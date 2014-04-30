@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="responsive-nav.js-master/responsive-nav.css">
-	<script src="responsive-nav.js-master/responsive-nav.js"></script>
+	<link rel="stylesheet" href="responsive-nav/responsive-nav.css">
 </head>
 <body>

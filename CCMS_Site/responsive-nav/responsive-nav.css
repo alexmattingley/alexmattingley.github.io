@@ -29,6 +29,7 @@
 @media screen and (min-width: 1140px) {
   .js .nav-collapse {
     position: relative;
+    overflow: visible;
   }
   .js .nav-collapse.closed {
     max-height: none;

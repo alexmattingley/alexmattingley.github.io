@@ -63,6 +63,7 @@ Header styles
 		background-color: #f7f7f7;
 	}
 	header .main-nav li a:hover {
+		color: #7AFA73;
 
 	}
 	.nav-toggle {
@@ -74,7 +75,7 @@ Header styles
 		background: url('../img/hamburger_nav.png');
 		height: 30px;
 		width: 30px;
-		}
+	}
 /****************************
 section_desc/section_feed styles
 *****************************/
@@ -174,11 +175,11 @@ Header Layout
 *****************************/
 
 	.main-nav {
-		min-height: 350px;
+		/*min-height: 350px;*/
 		clear: both;
 	}
 	.main-nav li {
-		margin: 1.4rem auto;
+		padding: .5rem 0;
 		text-align: center;
 	}
 	.main-logo {
@@ -206,7 +207,7 @@ Header Layout
 		margin-right: 2%;
 	}
 	.slide_img {
-		background: url('http://lorempixel.com/320/200');
+		background: url('http://lorempixel.com/700/300');
 		height: 200px;
 		width: 100%;
 		background-repeat: no-repeat;
@@ -219,7 +220,6 @@ dropdown_nav (everything including header styles for testing go here)
 		text-align: left;
 	}
 	.main-nav {
-		min-height: 750px;
 		padding-left: 20px;
 	}
 	.dropdown_nav {
@@ -384,7 +384,7 @@ Footer Layout
 		width: 100%;
 	}
 	.footer {
-		min-height: 350px; 
+		min-height: 290px; 
 		padding-left: 0;
 	}
 
@@ -453,9 +453,6 @@ Break 3
 @media (min-width: 680px) {
 	body {
 		font-size: 1.1rem;
-	}
-	.button_display li:nth-child(2) {
-		margin-left: 15px;
 	}
 /****************************
 Header Layout(3)
@@ -542,6 +539,7 @@ Section_feed/Section_desc(3)
 	}
 	.section_desc {
 		width: 60%;
+		clear: both;
 	}
 	/*.section_feed .secondary_bg_color p {
 		overflow:hidden;
@@ -633,23 +631,16 @@ Footer(3)
 Break 4
 *****************************/
 @media (min-width: 1140px) {
+
 /****************************
 Header(4)
 *****************************/
-	.main-nav li {
-		display: inline-block;
-		margin-right: 1.4rem;
-		margin-top: 0;
-		margin-bottom: 0;
-		border-radius: 3px;
-	}
-	.main-nav  li:nth-child(-n+6) {
-		padding: 0 5px;
+	header {
+		padding: 40px 15px;
 	}
 	.main-nav {
 		clear: none;
 		float: right;
-		min-height: 60px;
 		line-height: 35px;
 	}
 	.main-logo {
@@ -659,12 +650,6 @@ Header(4)
 		width: 215px;
 		margin-top: 0px; 
 		margin-right: -50px;
-	}
-	header {
-		padding: 40px 15px;
-	}
-	.slide_text > * {
-		text-align: left;
 	}
 	.slide_text {
 		float: left;
@@ -685,9 +670,33 @@ Header(4)
 	.arrows {
 		margin-top: 50px;
 	}
+	.slide_text > * {
+		text-align: left;
+	}
+	.main-nav li {
+		display: inline-block;
+		margin-right: 1.4rem;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+	}
+	.main-nav > li:nth-child(-n+6) {
+		padding: 0 5px;
+	}
+	.main-nav li:hover {
+		background: #222222;
+	}
 /****************************
-dropdown_nav(4) (everything including header styles for testing go here)
+dropdown_nav(4)
 *****************************/
+	.dropdown_nav {
+		line-height: 30px;
+		background: #222222;
+		position: absolute;
+		border: none;
+		margin-left: -5px;
+		padding-left: 0px;
+	}
 	.main-nav ul {
 		display: none;
 		position: absolute;
@@ -696,32 +705,13 @@ dropdown_nav(4) (everything including header styles for testing go here)
 	.main-nav ul:hover > ul {
 		display: block;
 	}
-	.main-nav li:hover {
-		background: #222222;
-	}
 	
 	.dropdown_nav li {
 		display: block;
+		padding: 5px 5px;
 	}
-	.main-nav > li:nth-child(1):hover {
-		height: 67px;
-	}
-	
-	.main-nav > li:nth-child(2):hover {
-		height: 247px;
-	}
-	.dropdown_nav {
-		line-height: 30px;
-		background: #222222;
-		border-radius: 3px;
-	}
-	.dropdown_nav {
+	.dropdown_nav li:hover a {
 		color: #7AFA73;
-	}
-	.dropdown_nav {
-		border: none;
-		margin-left: 0px;
-		padding-left: 0px;
 	}
 	
 /****************************
@@ -815,14 +805,17 @@ Footer (4)
 		height: 60px;
 		line-height: 22px;
 	}
-	footer .main-nav li:last-child {
-		margin-right: 0px;
-	}
 	.social_media_foot {
 		clear: right;
 	}
 	.copyright {
 		margin-top: -50px; 
+	}
+	.footer {
+		min-height: 125px;
+	}
+	footer .main-nav li:last-child {
+		margin-right: 0px;
 	}
 
 }

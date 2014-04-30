@@ -63,11 +63,10 @@
 		</div>
 		<div class="leader_research_content">
 			<h2>Research Interests</h2>
+			<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in. orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in. orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.</p>
 		</div>
 	</div>
 
-<!-- Style 0 -->
-<p class="style_name">Style 0</p>
 	<section>
 		<div class="section_desc">
 			<h4>Who is CCMS</h4>
