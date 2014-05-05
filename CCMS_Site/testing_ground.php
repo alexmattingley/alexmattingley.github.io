@@ -5,7 +5,7 @@
 			<ul class="main-nav nav-collapse js">
 				<li>
 					<a href="#">About</a>
-					<ul class="dropdown_nav group">
+					<ul class="dropdown_nav">
 						<li><a href="#">CCMS Team</a></li>
 					</ul>
 				</li>

@@ -246,4 +246,49 @@
 	</div>
 </section>
 
+
+<section class="table-fun">
+	<ul class="table-tabs">
+		<li class="software-tab active"><a href="#">Main Software Tools</a></li>
+		<li class="concept-tab active"><a href="#">Proof-of-Concepts Tools</a></li>
+		<li class="deprecated-tab active"><a href="#">Deprecated Tools</a></li>
+	</ul>
+		<table class="responsive">
+			<tbody>
+				<tr id="table-head" class="primary_color_bg">
+					<th>Tool</th>
+					<th>Purpose</th>
+					<th>Research Area</th>
+					<th>ProteoSAfe</th>
+					<th>Downloadables</th>
+					<th>Publications</th>
+					<th>Contacts</th>
+				</tr>
+				<tr class="secondary_bg_color">
+					<td><a href="#">MXDB</a></td>
+					<td>Cross-linked peptides identification</td>
+					<td><a href="#">Universal Tools for Mass Spectrometry</a></td>
+					<td><a href="#">Workflow:MXDB</a></td>
+					<td><a href="#">MXDB</a></td>
+					<td><a href="#">24493012</a></td>
+					<td><ul>
+						<li><a href="#">Jian Wang</a></li>
+						<li><a href="#">Nuno Bandeira</a></li>
+					</ul></td>
+				</tr>
+				<tr>
+					<td><a href="#">MXDB</a></td>
+					<td>Cross-linked peptides identification</td>
+					<td><a href="#">Spectral networks of any type of molecule to explore the molecular diversity present in biological samples</a></td>
+					<td><a href="#">Workflow:Specialize</a></td>
+					<td><a href="#">MXDB</a></td>
+					<td><a href="#">24493012</a></td>
+					<td><ul>
+						<li><a href="#">Jian Wang</a></li>
+						<li><a href="#">Nuno Bandeira</a></li>
+					</ul></td>
+				</tr>
+			</tbody>
+		</table>
+</section>
 <?php include('includes/footer.php'); ?>
