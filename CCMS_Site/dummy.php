@@ -77,8 +77,6 @@
 		</div>
 	</section>
 
-<!-- Style 1 -->
-<p class="style_name">Style 1</p>
 	<section class="secondary_bg_color">
 		<div class="section_desc">
 			<h4>What CCMS Does</h4>
@@ -95,8 +93,6 @@
 		</div>
 	</section>
 
-<!-- Style 2 -->
-<p class="style_name">Style 2 (3 col)</p>
 
 	<section>
 		<ul class="section_feed">
@@ -131,32 +127,30 @@
 	</section>
 
 
-<!--Style 2 -->
-<p class="style_name">Style 2 (2 Col)</p>	
 
-<section>
-	<ul class="section_feed">
-		<li class="col_2">
-			<div class="secondary_bg_color">
-					<img src="http://lorempixel.com/320/200">
-					<h4>Latest Projects</h4>
-					<p>Peptide fragmentation models for new enzymes</p>
-					<h6>Collaborator: Elizabeth Komives</h6>
-			</div>	
-		</li>
-		<li class="col_2">
-			<div class="secondary_bg_color">
-					<img src="http://lorempixel.com/320/200">
-					<h4>Latest Projects</h4>
-					<p>Peptide fragmentation models for new enzymes</p>
-					<h6>Collaborator: Elizabeth Komives</h6>
-			</div>	
-		</li>
-	</ul>
-</section>
 
-<!-- Style 3  -->
-<p class="style_name">Style 3</p>
+	<section>
+		<ul class="section_feed">
+			<li class="col_2">
+				<div class="secondary_bg_color">
+						<img src="http://lorempixel.com/320/200">
+						<h4>Latest Projects</h4>
+						<p>Peptide fragmentation models for new enzymes</p>
+						<h6>Collaborator: Elizabeth Komives</h6>
+				</div>
+				<a class="button clear_green" href="#">View All</a>	
+			</li>
+			<li class="col_2">
+				<div class="secondary_bg_color">
+						<img src="http://lorempixel.com/320/200">
+						<h4>Latest Projects</h4>
+						<p>Peptide fragmentation models for new enzymes</p>
+						<h6>Collaborator: Elizabeth Komives</h6>
+				</div>
+				<a class="button clear_green" href="#">View All</a>		
+			</li>
+		</ul>
+	</section>
 
 	<section class="primary_color_bg">
 		<div class="section_desc">
@@ -166,8 +160,6 @@
 		</div>	
 	</section>
 
-	<!--Style 4-->
-<!-- <p class="style_name">Style 4</p> -->
 
 	<section class="secondary_desc group">
 		<div class="graph_img">
@@ -179,11 +171,6 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.</p>
 		</div>
 	</section>
-
-<!-- Style 5 -->
-
-<p class="style_name">style 5</p>
-
 
 	<section>
 		<ul class="col_3_logo">
@@ -205,90 +192,96 @@
 		</ul>
 	</section>
 
-<!-- Style 6 -->
 
-<p class="style_name">Unique 1</p>
+	<section class="group">
+		<div class="section_desc leader_head">
+			<h4>Contacts</h4>
+			<h2>CCMS Leadership</h2>
+		</div>
+		<div class="leader_img">
+			<img src="img/leader.png" alt="Picture of Leadership">
+		</div>
+		<div class="people_unique_desc">
+			<ul class="leader_detail">
+				<li>
+					<h2>Pavel Panzer</h2>
+					<h4>Principal Investigator</h4>
+					<p><i class="fa fa-phone"></i> (858) 534-8666</p>
+					<a href="#" class="button clear_green">Email Me</a>
+				</li>
+				<li>
+					<h2>Nuno Bandeira</h2>
+					<h4>Principal Investigator</h4>
+					<p><i class="fa fa-phone"></i> (858) 534-8666</p>
+					<a href="#" class="button clear_green">Email Me</a>
+				</li>
+				<li>
+					<h2>Vineet Bafna</h2>
+					<h4>Pricipal Investigator</h4>
+					<p><i class="fa fa-phone"></i> (858) 534-8666</p>
+					<a href="#" class="button clear_green">Email Me</a>
+				</li>
+			</ul>
+			<div class="picture_detail">
+				<p>From Left to right:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<h5>For techinical Assistance Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat</h5>
+				<a href="#" class="button green">All CCMS People</a>
+			</div>
+		</div>
+	</section>
 
-<section class="group">
-	<div class="section_desc leader_head">
-		<h4>Contacts</h4>
-		<h2>CCMS Leadership</h2>
-	</div>
-	<div class="leader_img">
-		<img src="img/leader.png" alt="Picture of Leadership">
-	</div>
-	<div class="people_unique_desc">
-		<ul class="leader_detail">
-			<li>
-				<h2>Pavel Panzer</h2>
-				<h4>Principal Investigator</h4>
-				<p><i class="fa fa-phone"></i> (858) 534-8666</p>
-				<a href="#" class="button clear_green">Email Me</a>
-			</li>
-			<li>
-				<h2>Nuno Bandeira</h2>
-				<h4>Principal Investigator</h4>
-				<p><i class="fa fa-phone"></i> (858) 534-8666</p>
-				<a href="#" class="button clear_green">Email Me</a>
-			</li>
-			<li>
-				<h2>Vineet Bafna</h2>
-				<h4>Pricipal Investigator</h4>
-				<p><i class="fa fa-phone"></i> (858) 534-8666</p>
-				<a href="#" class="button clear_green">Email Me</a>
-			</li>
+
+	<section class="table-fun">
+		<ul class="table-tabs">
+			<li class="software-tab active"><a href="#">Main Software Tools</a></li>
+			<li class="concept-tab active"><a href="#">Proof-of-Concepts Tools</a></li>
+			<li class="deprecated-tab active"><a href="#">Deprecated Tools</a></li>
 		</ul>
-		<div class="picture_detail">
-			<p>From Left to right:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat urna porttitor in.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<h5>For techinical Assistance Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sagittis ultrices orci, ut volutpat</h5>
-			<a href="#" class="button green">All CCMS People</a>
+			<table class="responsive">
+				<tbody>
+					<tr id="table-head" class="primary_color_bg">
+						<th>Tool</th>
+						<th>Purpose</th>
+						<th>Research Area</th>
+						<th>ProteoSAfe</th>
+						<th>Downloadables</th>
+						<th>Publications</th>
+						<th>Contacts</th>
+					</tr>
+					<tr class="secondary_bg_color">
+						<td><a href="#">MXDB</a></td>
+						<td>Cross-linked peptides identification</td>
+						<td><a href="#">Universal Tools for Mass Spectrometry</a></td>
+						<td><a href="#">Workflow:MXDB</a></td>
+						<td><a href="#">MXDB</a></td>
+						<td><a href="#">24493012</a></td>
+						<td><ul>
+							<li><a href="#">Jian Wang</a></li>
+							<li><a href="#">Nuno Bandeira</a></li>
+						</ul></td>
+					</tr>
+					<tr>
+						<td><a href="#">MXDB</a></td>
+						<td>Cross-linked peptides identification</td>
+						<td><a href="#">Spectral networks of any type of molecule to explore the molecular diversity present in biological samples</a></td>
+						<td><a href="#">Workflow:Specialize</a></td>
+						<td><a href="#">MXDB</a></td>
+						<td><a href="#">24493012</a></td>
+						<td><ul>
+							<li><a href="#">Jian Wang</a></li>
+							<li><a href="#">Nuno Bandeira</a></li>
+						</ul></td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+<!-- <section>
+	<div class="primary_color_bg">
+		<div class="tools_left_hero"><img src="img/project_universal_spectrometry.png" alt="Universal Mass Spectrometry Diagram"></div>
+		<div class="tools_right_hero">
+			<h1>Universal Tools for Mass Spectrometry</h1>
+			<p>While MS instruments and experimental protocols were rapidly advancing in recent years, the software tools to analyze spectra were often lagging behind. After developing numerous tools for peptide sequencing and identification, CCMS came to a realization that the field needs universal tools that work well for diverse types of spectra and different experimental protocols.</p>
 		</div>
 	</div>
-</section>
-
-
-<section class="table-fun">
-	<ul class="table-tabs">
-		<li class="software-tab active"><a href="#">Main Software Tools</a></li>
-		<li class="concept-tab active"><a href="#">Proof-of-Concepts Tools</a></li>
-		<li class="deprecated-tab active"><a href="#">Deprecated Tools</a></li>
-	</ul>
-		<table class="responsive">
-			<tbody>
-				<tr id="table-head" class="primary_color_bg">
-					<th>Tool</th>
-					<th>Purpose</th>
-					<th>Research Area</th>
-					<th>ProteoSAfe</th>
-					<th>Downloadables</th>
-					<th>Publications</th>
-					<th>Contacts</th>
-				</tr>
-				<tr class="secondary_bg_color">
-					<td><a href="#">MXDB</a></td>
-					<td>Cross-linked peptides identification</td>
-					<td><a href="#">Universal Tools for Mass Spectrometry</a></td>
-					<td><a href="#">Workflow:MXDB</a></td>
-					<td><a href="#">MXDB</a></td>
-					<td><a href="#">24493012</a></td>
-					<td><ul>
-						<li><a href="#">Jian Wang</a></li>
-						<li><a href="#">Nuno Bandeira</a></li>
-					</ul></td>
-				</tr>
-				<tr>
-					<td><a href="#">MXDB</a></td>
-					<td>Cross-linked peptides identification</td>
-					<td><a href="#">Spectral networks of any type of molecule to explore the molecular diversity present in biological samples</a></td>
-					<td><a href="#">Workflow:Specialize</a></td>
-					<td><a href="#">MXDB</a></td>
-					<td><a href="#">24493012</a></td>
-					<td><ul>
-						<li><a href="#">Jian Wang</a></li>
-						<li><a href="#">Nuno Bandeira</a></li>
-					</ul></td>
-				</tr>
-			</tbody>
-		</table>
-</section>
+</section> -->
 <?php include('includes/footer.php'); ?>
